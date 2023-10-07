@@ -17,6 +17,7 @@ module.exports = {
       fontFamily: {
         dmsans: ['DM Sans', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        helveticaNeue: ['Helvetica Neue Light'],
       },
     },
     screens: {
