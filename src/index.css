@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
 body {
   font-family: 'BMWTypeNext Pro Regular';
 }

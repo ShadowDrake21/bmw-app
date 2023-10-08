@@ -5,10 +5,12 @@ import vehiclePhoto from '@/assets/main-page/bmw4.webp'
 export const menuText = [
   {
     firstLevel: {
+      type: 'cascade',
       name: 'Models',
       secondLevel: [
         {
           name: 'All Models',
+          image: null,
           thirdLevel: [
             { name: 'X1', link: '#', image: vehiclePhoto },
             { name: 'X3', link: '#', image: vehiclePhoto },
@@ -33,6 +35,7 @@ export const menuText = [
         },
         {
           name: 'SUVs',
+          image: null,
           thirdLevel: [
             { name: 'X1', link: '#', image: vehiclePhoto },
             { name: 'X3', link: '#', image: vehiclePhoto },
@@ -57,6 +60,7 @@ export const menuText = [
         },
         {
           name: 'Sedans',
+          image: null,
           thirdLevel: [
             { name: 'X1', link: '#', image: vehiclePhoto },
             { name: 'X3', link: '#', image: vehiclePhoto },
@@ -81,6 +85,7 @@ export const menuText = [
         },
         {
           name: 'Coupes',
+          image: null,
           thirdLevel: [
             { name: 'X1', link: '#', image: vehiclePhoto },
             { name: 'X3', link: '#', image: vehiclePhoto },
@@ -105,6 +110,7 @@ export const menuText = [
         },
         {
           name: 'Convertibles',
+          image: null,
           thirdLevel: [
             { name: 'X1', link: '#', image: vehiclePhoto },
             { name: 'X3', link: '#', image: vehiclePhoto },
@@ -184,22 +190,166 @@ export const menuText = [
   },
   {
     firstLevel: {
+      type: 'item',
       name: 'Build Your Own',
     },
   },
   {
     firstLevel: {
+      type: 'list',
       name: 'Shopping',
+      secondLevel: [
+        {
+          name: 'Find Your Trade-In Value',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Estimate Payment',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Request a Test Drive',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Shop BMW Parts & Accessories',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Shop Online',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Lease & Financing Offers',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'BMW Certified Offers',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Apply for Financing',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'BMW Financial Services',
+          image: null,
+          thirdLevel: undefined,
+        },
+      ],
     },
   },
   {
     firstLevel: {
+      type: 'item',
       name: 'BMW Electric',
     },
   },
   {
     firstLevel: {
+      type: 'list',
       name: 'Owners',
+      secondLevel: [
+        {
+          name: 'Sign in to My BMW',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Register for My BMW',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Log in to BMW ConnectedDrive',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'My BMW App',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'BMW Financial Services My Account',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Make a Payment',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'The BMW Card',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'BMW Genius',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: "Owner's Manual",
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'BMW ConnectedDrive',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Remote Sofware Upgrades',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'BMW Parts & Accessories',
+          image: null,
+          thirdLevel: undefined,
+        },
+
+        {
+          name: 'BMW Maintenance Programs',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'BMW Service',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Warranty Information',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Safety and Emission Recalls',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'Protection Products',
+          image: null,
+          thirdLevel: undefined,
+        },
+        {
+          name: 'BMW Vehicle Return',
+          image: null,
+          thirdLevel: undefined,
+        },
+      ],
     },
   },
 ]
