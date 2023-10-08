@@ -8,6 +8,7 @@ import {
   UserIcon,
 } from '@heroicons/react/24/outline'
 import { menuText } from '../static/texts'
+import NavBarBtn from './NavBarBtn'
 
 type Props = {}
 
@@ -15,7 +16,6 @@ const NavBar = (props: Props) => {
   const [menuIsToggled, setMenuIsToggled] = useState(false)
   const [searchIsClicked, setSearchIsClicked] = useState(false)
   const [searchTerm, setSearchTerm] = useState('')
-  const [menuLayoutsCliked, setMenuLayoutsCliked] = useState(false)
 
   const changeDisplay = (element?: HTMLElement) => {
     let displayStyle
@@ -58,9 +58,9 @@ const NavBar = (props: Props) => {
               <ul className="h-full flex justify-center items-center">
                 {menuText.map(({ firstLevel }, id) => (
                   <li className="h-full" key={firstLevel.name}>
-                    <button className="text-base font-bold relative px-3 h-full transition hover:before:content-[''] hover:before:bottom-0 hover:before:left-0 hover:before:absolute hover:before:w-full hover:before:h-[3px] hover:before:bg-[#1C69D4] flex flex-col justify-center">
+                    <NavBarBtn addClasses="text-base font-bold px-3 flex">
                       {firstLevel.name}
-                    </button>
+                    </NavBarBtn>
                   </li>
                 ))}
               </ul>
@@ -68,15 +68,15 @@ const NavBar = (props: Props) => {
           </div>
 
           <div className="flex items-center justify-center">
-            <button className="relative pl-10 pr-4 h-full transition hover:before:content-[''] hover:before:bottom-0 hover:before:left-0 hover:before:absolute hover:before:w-full hover:before:h-[3px] hover:before:bg-[#1C69D4] flex flex-col justify-center">
+            <NavBarBtn addClasses="pl-10 pr-4 flex">
               <MapPinIcon className="absolute w-6 h-6 left-4 top-[50%] translate-y-[-50%]" />
               <span className="text-[0.875rem] w-full font-bold leading-5 ml-1">
                 Choose your local BMW Center
               </span>
-            </button>
-            <button className="hidden sm:flex relative px-3 h-full transition hover:before:content-[''] hover:before:bottom-0 hover:before:left-0 hover:before:absolute hover:before:w-full hover:before:h-[3px] hover:before:bg-[#1C69D4] flex-col justify-center">
+            </NavBarBtn>
+            <NavBarBtn addClasses="hidden sm:flex px-3">
               <UserIcon className="w-6 h-6" />
-            </button>
+            </NavBarBtn>
             <button
               className="h-full px-3 xl:hidden"
               onClick={() => setMenuIsToggled(toggleExpression(menuIsToggled))}
@@ -87,9 +87,9 @@ const NavBar = (props: Props) => {
                 <Bars3Icon className="w-6 h-6" />
               )}
             </button>
-            <button className="hidden xl:flex relative px-3 h-full transition hover:before:content-[''] hover:before:bottom-0 hover:before:left-0 hover:before:absolute hover:before:w-full hover:before:h-[3px] hover:before:bg-[#1C69D4] flex-col justify-center">
+            <NavBarBtn addClasses="hidden xl:flex px-3">
               <MagnifyingGlassIcon className="w-5 h-5" />
-            </button>
+            </NavBarBtn>
           </div>
         </div>
       </div>
