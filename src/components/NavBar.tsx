@@ -1,11 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import logo from '@/assets/main-page/logo.png'
-import {
-  ChevronRightIcon,
-  ChevronDownIcon,
-  XMarkIcon,
-  ArrowsUpDownIcon,
-} from '@heroicons/react/24/solid'
+import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/solid'
 import {
   ArrowDownCircleIcon,
   MagnifyingGlassIcon,
@@ -27,7 +22,7 @@ const NavBar = (props: Props) => {
     if (element) {
       displayStyle = element?.style.display || 'none'
     } else {
-      return (displayStyle = menuIsToggled ? 'hidden' : 'block')
+      return (displayStyle = menuIsToggled ? 'block' : 'hidden')
     }
 
     return (displayStyle = displayStyle === 'none' ? 'block' : 'none')
@@ -48,34 +43,59 @@ const NavBar = (props: Props) => {
   }
 
   return (
-    <nav>
-      <div></div>
+    <nav className="relative">
       <div
-        className={`${changeDisplay()} xl:hidden bg-white text-[#666]`}
-        onClick={() => setMenuIsToggled(toggleExpression(menuIsToggled))}
+        className={`${
+          menuIsToggled ? 'bg-white text-[#666]' : 'bg-black text-white '
+        } h-[70px] xl:h-[85px] bg-black px-6 sm:px-[4%]`}
       >
-        <div className="h-[70px] px-6 border-b border-[#BBBBBB] flex  justify-between">
+        <div className="flex justify-between h-full xl:border-b xl:border-b-white">
           <div className="flex items-center">
             <a href="#" className="rounded-full">
               <img className="w-9 h-9 rounded-full " src={logo} alt="logo" />
             </a>
+            <div className="hidden xl:block h-full ml-6">
+              <ul className="h-full flex justify-center items-center">
+                {menuText.map(({ firstLevel }, id) => (
+                  <li className="h-full" key={firstLevel.name}>
+                    <button className="text-base font-bold relative px-3 h-full transition hover:before:content-[''] hover:before:bottom-0 hover:before:left-0 hover:before:absolute hover:before:w-full hover:before:h-[3px] hover:before:bg-[#1C69D4] flex flex-col justify-center">
+                      {firstLevel.name}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
-          <div className="flex items-center pr-4">
-            <button className="hidden sm:flex relative px-3 h-full transition hover:before:content-[''] hover:before:bottom-0 hover:before:left-0 hover:before:absolute hover:before:w-full hover:before:h-[3px] hover:before:bg-[#1C69D4]  flex-col justify-center">
-              <UserIcon className="w-6 h-6" />
-            </button>
+          <div className="flex items-center justify-center">
             <button className="relative pl-10 pr-4 h-full transition hover:before:content-[''] hover:before:bottom-0 hover:before:left-0 hover:before:absolute hover:before:w-full hover:before:h-[3px] hover:before:bg-[#1C69D4] flex flex-col justify-center">
               <MapPinIcon className="absolute w-6 h-6 left-4 top-[50%] translate-y-[-50%]" />
               <span className="text-[0.875rem] w-full font-bold leading-5 ml-1">
                 Choose your local BMW Center
               </span>
             </button>
-            <button className="w-6 h-6 ml-3">
-              <XMarkIcon className="w-6 h-6 hover:text-[#191f3f]" />
+            <button className="hidden sm:flex relative px-3 h-full transition hover:before:content-[''] hover:before:bottom-0 hover:before:left-0 hover:before:absolute hover:before:w-full hover:before:h-[3px] hover:before:bg-[#1C69D4] flex-col justify-center">
+              <UserIcon className="w-6 h-6" />
+            </button>
+            <button
+              className="h-full px-3 xl:hidden"
+              onClick={() => setMenuIsToggled(toggleExpression(menuIsToggled))}
+            >
+              {menuIsToggled ? (
+                <XMarkIcon className="w-6 h-6 hover:text-[#191f3f]" />
+              ) : (
+                <Bars3Icon className="w-6 h-6" />
+              )}
+            </button>
+            <button className="hidden xl:flex relative px-3 h-full transition hover:before:content-[''] hover:before:bottom-0 hover:before:left-0 hover:before:absolute hover:before:w-full hover:before:h-[3px] hover:before:bg-[#1C69D4] flex-col justify-center">
+              <MagnifyingGlassIcon className="w-5 h-5" />
             </button>
           </div>
         </div>
+      </div>
+      <div
+        className={`${changeDisplay()} absolute w-full top-70 bg-white text-[#666] border-t border-[#BBBBBB] z-10`}
+      >
         <div className="ml-6 pt-7 max-w-[70%]">
           <ul>
             {menuText.map((link1) => (
