@@ -4,10 +4,10 @@ import { mainSliderPhotos } from './static/sliderPhotos'
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <NavBar />
       <SliderBlock array={mainSliderPhotos} />
-    </div>
+    </main>
   )
 }
 
