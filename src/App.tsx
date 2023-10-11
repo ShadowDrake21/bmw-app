@@ -1,6 +1,6 @@
 import NavBar from './components/NavBar/NavBar'
 import SliderBlock from './components/SliderBlock/SliderBlock'
-import { mainSliderPhotos } from './static/sliderPhotos'
+import { mainSliderPhotos } from './static/sliderItems'
 
 function App() {
   return (

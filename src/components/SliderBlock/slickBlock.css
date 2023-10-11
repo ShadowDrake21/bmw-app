@@ -33,3 +33,23 @@
 .slick__main-dots li button:before {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .slick__main {
+    padding-bottom: 0;
+  }
+
+  .slick__main-dots {
+    bottom: 70px;
+    text-align: left;
+    left: 15px;
+  }
+
+  .slick__main-dots li button {
+    color: #fff;
+  }
+
+  .slick__main-dots li.slick-active button {
+    color: #fff;
+  }
+}
