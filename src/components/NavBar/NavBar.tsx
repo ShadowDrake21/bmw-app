@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import logo from '@/assets/main-page/logo.png'
+import logoDark from '@/assets/main-page/logo-dark.png'
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/solid'
 import {
   ArrowDownCircleIcon,
@@ -7,7 +8,7 @@ import {
   MapPinIcon,
   UserIcon,
 } from '@heroicons/react/24/outline'
-import { menuText } from '../../static/texts'
+import { menuText } from '../../static/menuText'
 import NavBarBtn from './NavBarBtn'
 
 type Props = {}
@@ -58,7 +59,11 @@ const NavBar = (props: Props) => {
           <div className="flex justify-between h-full xl:border-b xl:border-b-white">
             <div className="flex items-center">
               <a href="#" className="rounded-full">
-                <img className="w-9 h-9 rounded-full " src={logo} alt="logo" />
+                <img
+                  className="w-9 h-9 rounded-full "
+                  src={!menuIsToggled ? logo : logoDark}
+                  alt="logo"
+                />
               </a>
               <div className="hidden xl:block h-full ml-6">
                 <ul className="h-full flex justify-center items-center">
