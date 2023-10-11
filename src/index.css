@@ -13,3 +13,7 @@ html {
 body {
   font-family: 'BMWTypeNext Pro Regular';
 }
+
+main {
+  position: relative;
+}

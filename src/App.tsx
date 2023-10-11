@@ -1,10 +1,13 @@
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar/NavBar'
+import SliderBlock from './components/SliderBlock/SliderBlock'
+import { mainSliderPhotos } from './static/sliderItems'
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <NavBar />
-    </div>
+      <SliderBlock array={mainSliderPhotos} />
+    </main>
   )
 }
 
