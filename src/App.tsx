@@ -1,7 +1,7 @@
 import BestModels from './components/BestModels/BestModels'
-import BestModelsItem from './components/BestModels/BestModelsItem'
 import NavBar from './components/NavBar/NavBar'
 import SliderBlock from './components/SliderBlock/SliderBlock'
+import BuildBMWDreams from './components/BuildBMWDreams/BuildBMWDreams'
 import { mainSliderPhotos } from './static/sliderItems'
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <NavBar />
       <SliderBlock array={mainSliderPhotos} />
       <BestModels />
+      <BuildBMWDreams />
     </main>
   )
 }
