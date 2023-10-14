@@ -6,7 +6,13 @@ import './slickBlock.css'
 import { useEffect, useState } from 'react'
 import { useWindowDimensions } from '../../utils/utils'
 
-const SliderBlock = ({ array }: any) => {
+const SliderBlock = ({
+  array,
+  className = '',
+  textTitleClasses = 'text-[32px] leading-[38px] sm:text-[42px] sm:leading-[50px] xl:text-[56px] xl:leading-[68px]',
+  textDescrClasses = 'text-xl xl:text-[28px] sm:text-[23px] sm:leading-[31px]  xl:leading-[37px]',
+  positionClasses = 'bottom-[90px] sm:top-[100px]',
+}: any) => {
   const { width } = useWindowDimensions()
 
   let settings = {
@@ -23,7 +29,7 @@ const SliderBlock = ({ array }: any) => {
     fade: true,
   }
   return (
-    <div>
+    <div className={`${className}`}>
       <Slider {...settings}>
         {array.map(({ photos, texts, links, index }: any) => (
           <div key={index} className="relative">
@@ -38,12 +44,14 @@ const SliderBlock = ({ array }: any) => {
               }
               alt="slider-img"
             />
-            <div className="mr-5 ml-[4%] bottom-[90px] absolute uppercase text-white sm:top-[100px] max-w-[360px]">
+            <div
+              className={`${positionClasses} mr-5 ml-[4%] absolute uppercase text-white max-w-[360px]`}
+            >
               <div className="mb-5">
-                <h3 className="text-[32px] font-normal leading-[38px] mb-3 sm:text-[42px] sm:leading-[50px] xl:text-[56px] xl:leading-[68px]">
+                <h3 className={`${textTitleClasses} font-normal mb-3`}>
                   {texts.title}
                 </h3>
-                <h5 className="text-xl font-light sm:text-[23px] sm:leading-[31px] xl:text-[28px] xl:leading-[37px]">
+                <h5 className={`font-light  ${textDescrClasses}`}>
                   {texts.description}
                 </h5>
               </div>
