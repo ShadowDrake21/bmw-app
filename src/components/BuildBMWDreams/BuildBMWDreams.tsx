@@ -16,7 +16,7 @@ const childVariant = {
 
 const BuildBMWDreams = (props: Props) => {
   return (
-    <section>
+    <div>
       <div className="bg-[#F6F6F6] pt-10 pb-12 sm:py-[60px] xl:py-[80px]">
         <h3 className="text-xl tracking-[-0.1px] text-[#221f1f] text-center mb-[25px] sm:text-[23px] sm:leading-[31px] xl:text-[28px] xl:leading-[37px]">
           Build the BMW of your dreams.
@@ -37,7 +37,7 @@ const BuildBMWDreams = (props: Props) => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

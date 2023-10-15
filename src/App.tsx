@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar'
 import SliderBlock from './components/SliderBlock/SliderBlock'
 import BuildBMWDreams from './components/BuildBMWDreams/BuildBMWDreams'
 import { advantagesSliderPhotos, mainSliderPhotos } from './static/sliderItems'
+import Ownership from './components/Ownership/Ownership'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         textDescrClasses="text-base"
         positionClasses="bottom-[25px] sm:top-[25px] xl:top-[70px] sm:max-w-[520px]"
       />
+      <Ownership />
     </main>
   )
 }
