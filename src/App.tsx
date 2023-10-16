@@ -5,6 +5,7 @@ import BuildBMWDreams from './components/BuildBMWDreams/BuildBMWDreams'
 import { advantagesSliderPhotos, mainSliderPhotos } from './static/sliderItems'
 import Ownership from './components/Ownership/Ownership'
 import AllBMWModels from './components/AllBMWModels/AllBMWModels'
+import FooterMenu from './components/FooterMenu/FooterMenu'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       />
       <Ownership />
       <AllBMWModels />
+      <FooterMenu />
     </main>
   )
 }
