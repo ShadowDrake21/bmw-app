@@ -1,4 +1,20 @@
-export const footerMenuInfo = [
+import facebook from '../assets/main-page/socialMedia/facebook.png'
+import twitter from '../assets/main-page/socialMedia/twitter.png'
+import youtube from '../assets/main-page/socialMedia/youtube.png'
+import instagram from '../assets/main-page/socialMedia/instagram.png'
+
+export interface IFooterMenu {
+  title: string
+  secondLevel: IFooterMenuSecondLevel[]
+}
+
+export interface IFooterMenuSecondLevel {
+  title: string
+  link: string
+  thereIsIcon: boolean
+}
+
+export const footerMenuInfo: IFooterMenu[] = [
   {
     title: 'The BMW Difference',
     secondLevel: [
@@ -193,5 +209,29 @@ export const footerMenuInfo = [
         thereIsIcon: false,
       },
     ],
+  },
+]
+
+interface ISocialMedia {
+  image: string
+  link: string
+}
+
+export const socialMedia: ISocialMedia[] = [
+  {
+    image: facebook,
+    link: 'facebook.com',
+  },
+  {
+    image: twitter,
+    link: 'x.com',
+  },
+  {
+    image: youtube,
+    link: 'youtube.com',
+  },
+  {
+    image: instagram,
+    link: 'instagram.com',
   },
 ]
