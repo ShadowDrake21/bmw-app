@@ -17,3 +17,12 @@ body {
 main {
   position: relative;
 }
+
+ul {
+  padding: 0 !important;
+}
+
+.models__list::-webkit-scrollbar,
+.model__draggable::-webkit-scrollbar {
+  display: none;
+}
