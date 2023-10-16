@@ -4,6 +4,7 @@ import SliderBlock from './components/SliderBlock/SliderBlock'
 import BuildBMWDreams from './components/BuildBMWDreams/BuildBMWDreams'
 import { advantagesSliderPhotos, mainSliderPhotos } from './static/sliderItems'
 import Ownership from './components/Ownership/Ownership'
+import AllBMWModels from './components/AllBMWModels/AllBMWModels'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         positionClasses="bottom-[25px] sm:top-[25px] xl:top-[70px] sm:max-w-[520px]"
       />
       <Ownership />
+      <AllBMWModels />
     </main>
   )
 }
