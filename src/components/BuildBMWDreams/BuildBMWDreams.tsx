@@ -23,8 +23,8 @@ const BuildBMWDreams = (props: Props) => {
         </h3>
         <div className="mx-[4%] sm:pt-[25px]">
           <div className="mb-11 grid grid-cols-[auto_auto] gap-[4%] sm:grid-cols-[auto_auto_auto_auto] xl:mb-[50px]">
-            {buildBMWDreamsInfo.map((dreamBMW) => (
-              <BuildBMWDreamsItem {...dreamBMW} />
+            {buildBMWDreamsInfo.map((dreamBMW, index) => (
+              <BuildBMWDreamsItem key={index} {...dreamBMW} />
             ))}
           </div>
           <div className="text-center">
