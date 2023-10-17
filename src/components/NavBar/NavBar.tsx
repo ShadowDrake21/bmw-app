@@ -10,6 +10,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { menuText } from '../../static/menuText'
 import NavBarBtn from './NavBarBtn'
+import { changeDisplay } from '../../utils/utils'
 
 type Props = {}
 
@@ -17,17 +18,6 @@ const NavBar = (props: Props) => {
   const [menuIsToggled, setMenuIsToggled] = useState(false)
   const [searchIsClicked, setSearchIsClicked] = useState(false)
   const [searchTerm, setSearchTerm] = useState('')
-
-  const changeDisplay = (element?: HTMLElement) => {
-    let displayStyle
-    if (element) {
-      displayStyle = element?.style.display || 'none'
-    } else {
-      return (displayStyle = menuIsToggled ? 'block' : 'hidden')
-    }
-
-    return (displayStyle = displayStyle === 'none' ? 'block' : 'none')
-  }
 
   const toggleExpression = (toggleElement: boolean) => {
     return !toggleElement
@@ -45,7 +35,7 @@ const NavBar = (props: Props) => {
       return
     }
 
-    element.style.display = changeDisplay(element)
+    element.style.display = changeDisplay(menuIsToggled, element)
   }
 
   return (
@@ -108,7 +98,9 @@ const NavBar = (props: Props) => {
           </div>
         </div>
         <div
-          className={`${changeDisplay()} absolute w-full top-70 bg-white text-[#666] border-t border-[#BBBBBB] z-10 h-screen`}
+          className={`${changeDisplay(
+            menuIsToggled
+          )} absolute w-full top-70 bg-white text-[#666] border-t border-[#BBBBBB] z-10 h-screen`}
         >
           <div className="ml-6 pt-7 max-w-[70%]">
             <ul>

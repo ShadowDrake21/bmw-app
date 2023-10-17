@@ -24,3 +24,14 @@ export function useWindowDimensions() {
 
   return windowDimensions
 }
+
+export const changeDisplay = (isToggled: boolean, element?: HTMLElement) => {
+  let displayStyle
+  if (element) {
+    displayStyle = element?.style.display || 'none'
+  } else {
+    return (displayStyle = isToggled ? 'block' : 'hidden')
+  }
+
+  return (displayStyle = displayStyle === 'none' ? 'block' : 'none')
+}

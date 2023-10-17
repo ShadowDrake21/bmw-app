@@ -24,8 +24,8 @@ const AllBMWModels = (props: Props) => {
           </span>
           <Draggable rootClass="model__draggable">
             <ul className="models__list flex items-center gap-8 overflow-x-auto">
-              {BMWSeriesInfo.map(({ name, link }) => (
-                <li className="text-sm font-bold whitespace-nowrap ">
+              {BMWSeriesInfo.map(({ name, link }, index) => (
+                <li key={index} className="text-sm font-bold whitespace-nowrap">
                   <a
                     className="transition-all duration-200 hover:text-[#1c69d4]"
                     href={link}
