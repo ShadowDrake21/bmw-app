@@ -1,4 +1,4 @@
-import React, { useState, ReactNode, useRef, RefObject, useEffect } from 'react'
+import { useState, ReactNode, useRef } from 'react'
 
 type DraggableProps = {
   rootClass: string

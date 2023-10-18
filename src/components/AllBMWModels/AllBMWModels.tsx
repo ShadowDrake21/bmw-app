@@ -1,5 +1,4 @@
 import { ChevronRightIcon } from '@heroicons/react/24/solid'
-import React from 'react'
 import { BMWSeriesInfo } from '../../static/BMWSeriesText'
 import Draggable from '../UI/Draggable/Draggable'
 

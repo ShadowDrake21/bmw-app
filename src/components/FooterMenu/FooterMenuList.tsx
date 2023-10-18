@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { IFooterMenu, footerMenuInfo } from '../../static/footerMenuText'
+import { useState } from 'react'
+import { IFooterMenu } from '../../static/footerMenuText'
 import { ArrowUpRightIcon, ChevronDownIcon } from '@heroicons/react/24/solid'
 import { changeDisplay, useWindowDimensions } from '../../utils/utils'
 

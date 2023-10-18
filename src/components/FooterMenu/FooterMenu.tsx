@@ -1,10 +1,4 @@
-import React from 'react'
-import {
-  IFooterMenuSecondLevel,
-  footerMenuInfo,
-  socialMedia,
-} from '../../static/footerMenuText'
-import { ArrowUpRightIcon, ChevronDownIcon } from '@heroicons/react/24/solid'
+import { footerMenuInfo, socialMedia } from '../../static/footerMenuText'
 import FooterMenuList from './FooterMenuList'
 
 type Props = {}

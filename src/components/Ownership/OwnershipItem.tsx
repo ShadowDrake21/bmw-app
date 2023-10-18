@@ -1,13 +1,23 @@
-import React from 'react'
+import { useRef } from 'react'
 import { IOwnership } from '../../static/ownershipText'
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
+import { useInView } from 'framer-motion'
 
 type Props = {}
 
 const OwnershipItem = (ownership: IOwnership) => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
   return (
-    <div>
-      <div className="text-center">
+    <div ref={ref}>
+      <div
+        style={{
+          transform: isInView ? 'none' : 'translateY(50px)',
+          opacity: isInView ? 1 : 0,
+          transition: 'all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1s',
+        }}
+        className="text-center"
+      >
         <div className="flex justify-center mb-3 xl:mb-6">
           <img
             src={ownership.image}
