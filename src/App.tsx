@@ -7,6 +7,7 @@ import Ownership from './components/Ownership/Ownership'
 import AllBMWModels from './components/AllBMWModels/AllBMWModels'
 import FooterMenu from './components/FooterMenu/FooterMenu'
 import Footer from './components/Footer/Footer'
+import { secondarySliderMainPage } from './static/customeSliderSettings'
 
 function App() {
   return (
@@ -17,10 +18,7 @@ function App() {
       <BuildBMWDreams />
       <SliderBlock
         array={advantagesSliderPhotos}
-        className="pt-6 pb-3"
-        textTitleClasses="text-[20px] leading-[30px] sm:text-[23px] sm:leading-[31px] xl:text-[28px] xl:leading-[37px]"
-        textDescrClasses="text-base"
-        positionClasses="bottom-[25px] sm:top-[25px] xl:top-[70px] sm:max-w-[520px]"
+        sliderSettings={secondarySliderMainPage}
       />
       <Ownership />
       <AllBMWModels />
