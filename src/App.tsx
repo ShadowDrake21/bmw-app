@@ -6,6 +6,7 @@ import { advantagesSliderPhotos, mainSliderPhotos } from './static/sliderItems'
 import Ownership from './components/Ownership/Ownership'
 import AllBMWModels from './components/AllBMWModels/AllBMWModels'
 import FooterMenu from './components/FooterMenu/FooterMenu'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Ownership />
       <AllBMWModels />
       <FooterMenu />
+      <Footer />
     </main>
   )
 }
