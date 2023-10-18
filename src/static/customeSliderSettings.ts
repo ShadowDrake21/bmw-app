@@ -6,7 +6,7 @@ export interface ISliderSettings {
 }
 
 export const secondarySliderMainPage: ISliderSettings = {
-  className: 'pt-6 pb-3',
+  className: 'pt-6 pb-3 sm:pt-0 sm:pb-0',
   textTitleClasses:
     'text-[20px] leading-[30px] sm:text-[23px] sm:leading-[31px] xl:text-[28px] xl:leading-[37px]',
   textDescrClasses: 'text-base',

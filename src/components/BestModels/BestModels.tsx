@@ -1,4 +1,3 @@
-import React from 'react'
 import { bestModelsInfo } from '../../static/bestModelsText'
 import BestModelsItem from './BestModelsItem'
 

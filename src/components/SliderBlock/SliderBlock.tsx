@@ -1,5 +1,4 @@
 import Slider from 'react-slick'
-import { ISlider } from '../../static/sliderItems'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './slickBlock.css'
@@ -11,7 +10,7 @@ const defaultSliderSettings: ISliderSettings = {
   textTitleClasses:
     'text-[32px] leading-[38px] sm:text-[42px] sm:leading-[50px] xl:text-[56px] xl:leading-[68px]',
   textDescrClasses:
-    'text-xl xl:text-[28px] sm:text-[23px] sm:leading-[31px]  xl:leading-[37px]',
+    'text-xl xl:text-[28px] sm:text-[23px] sm:leading-[31px] xl:leading-[37px]',
   positionClasses: 'bottom-[90px] sm:top-[100px]',
 }
 

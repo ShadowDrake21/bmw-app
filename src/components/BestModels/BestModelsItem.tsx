@@ -1,8 +1,5 @@
-import React from 'react'
 import { IBestModels } from '../../static/bestModelsText'
 import { useWindowDimensions } from '../../utils/utils'
-
-type Props = {}
 
 const BestModelsItem = (model: IBestModels) => {
   const { width } = useWindowDimensions()
