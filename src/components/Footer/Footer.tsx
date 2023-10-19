@@ -32,6 +32,12 @@ const Footer = (props: Props) => {
         <p className="text-xs font-light text-[#262626]">
           © 2023 BMW of North America, LLC. The BMW name, BMW logo, model names,
           and other trademarks are trademarks of BMW AG.
+          <div className="text-base font-bold text-black pt-4 text-center">
+            © Made by{' '}
+            <a href="https://github.com/ShadowDrake21">
+              Dmytro "Drake" Krapyvianski
+            </a>
+          </div>
         </p>
       </div>
     </footer>

@@ -26,3 +26,14 @@ ul {
 .model__draggable::-webkit-scrollbar {
   display: none;
 }
+
+.first__screen-shadow::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 5px;
+  height: 20px;
+  box-shadow: 0px -10px 35px 15px rgba(0, 0, 0, 0.98);
+}
