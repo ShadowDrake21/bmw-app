@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { IFirstScreenVideo } from '../../static/videoItems'
 import { useWindowDimensions } from '../../utils/utils'
 import leaseOfferIcon from '@/assets/model-i5/firstScreen/lease_offer-svg.svg'
@@ -21,9 +21,27 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
   const widthCheckXL = () => {
     return width < 1280
   }
+
+  const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < 70) {
+        setIsTopOfPage(true)
+      }
+      if (window.scrollY >= 70) setIsTopOfPage(false)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
-      <VehicleAddNavBar title="The i5" link={btnLink} />
+      <VehicleAddNavBar
+        isTopOfPage={isTopOfPage}
+        title="The i5"
+        link={btnLink}
+      />
       <div className="max-h-screen h-full">
         <div>
           <video
