@@ -39,7 +39,7 @@ const NavBar = (props: Props) => {
   }
 
   return (
-    <div className="absolute z-20 w-full">
+    <div className="absolute z-30 w-full">
       <nav className="relative">
         <div
           className={`${
@@ -50,7 +50,7 @@ const NavBar = (props: Props) => {
             <div className="flex items-center">
               <a href="#" className="rounded-full">
                 <img
-                  className="w-9 h-9 rounded-full "
+                  className="w-9 h-9 rounded-full xl:w-[52px] xl:h-[52px]"
                   src={!menuIsToggled ? logo : logoDark}
                   alt="logo"
                 />
