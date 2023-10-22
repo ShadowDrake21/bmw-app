@@ -1,4 +1,3 @@
-import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Draggable from '../UI/Draggable/Draggable'
 import { anchorLinksInfo } from '../../static/anchorLinks'
