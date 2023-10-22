@@ -37,7 +37,7 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
         title="The i5"
         link={btnLink}
       />
-      <div className="max-h-screen h-full">
+      <div className="max-h-full h-full">
         <div className="relative">
           <video
             src={videoURL}
