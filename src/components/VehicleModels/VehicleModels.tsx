@@ -5,6 +5,7 @@ import Slider from 'react-slick'
 import { vehicleModelsInfo } from '../../static/vehicleModels'
 import VehicleModelsItem from './VehicleModelsItem'
 import './slickVehicle.css'
+import { useWindowDimensions } from '../../utils/utils'
 
 type Props = {}
 
@@ -14,9 +15,23 @@ const VehicleModels = (props: Props) => {
     dots: false,
     infinite: false,
     speed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 0,
     className: 'slick__vehacle-models',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  }
+
+  const { width } = useWindowDimensions()
+  const widthCheckSM = () => {
+    return width < 768
   }
   return (
     <section id="models" className="py-10 sm:py-[60px] xl:py-[80px]">
@@ -29,12 +44,18 @@ const VehicleModels = (props: Props) => {
           best-in-class technology, and dynamic performance.
         </p>
       </div>
-      <div className="text-center">
-        <Slider {...settings}>
-          {vehicleModelsInfo.map((vehicleModel, index) => (
+      <div className="text-center sm:flex sm:justify-center">
+        {widthCheckSM() ? (
+          <Slider {...settings}>
+            {vehicleModelsInfo.map((vehicleModel, index) => (
+              <VehicleModelsItem key={index} {...vehicleModel} />
+            ))}
+          </Slider>
+        ) : (
+          vehicleModelsInfo.map((vehicleModel, index) => (
             <VehicleModelsItem key={index} {...vehicleModel} />
-          ))}
-        </Slider>
+          ))
+        )}
       </div>
     </section>
   )
