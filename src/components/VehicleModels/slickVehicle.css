@@ -1,0 +1,48 @@
+.slick__vehacle-models .slick-arrow {
+  z-index: 10;
+  background-color: #fff;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14);
+  transition: all 0.4s;
+  opacity: 1;
+}
+
+.slick__vehacle-models .slick-arrow.slick-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slick__vehacle-models .slick-next {
+  right: 25px;
+}
+
+.slick__vehacle-models .slick-prev {
+  left: 25px;
+}
+
+.slick__vehacle-models .slick-prev::before {
+  content: '\2039';
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  color: #000;
+}
+
+.slick__vehacle-models .slick-next::before {
+  content: '\203A';
+  position: absolute;
+  top: 3px;
+  right: 50%;
+  transform: translateX(50%);
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  color: #000;
+}
