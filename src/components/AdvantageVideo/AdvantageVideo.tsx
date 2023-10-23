@@ -4,7 +4,7 @@ import { IAdvantageVideo } from '../../static/videoItems'
 const AdvantageVideo = (advantageVideo: IAdvantageVideo) => {
   const { videoURL, advantageType, title, text, modelType } = advantageVideo
   return (
-    <div className="relative">
+    <section id="performance" className="relative">
       <div>
         <video
           src={videoURL}
@@ -34,7 +34,7 @@ const AdvantageVideo = (advantageVideo: IAdvantageVideo) => {
       <span className="text-[#f6f6f6] text-[11px] leading-[13px] font-normal tracking-[0.25px] absolute bottom-5 right-10 xl:right-[8%] xl:bottom-7">
         {modelType}
       </span>
-    </div>
+    </section>
   )
 }
 
