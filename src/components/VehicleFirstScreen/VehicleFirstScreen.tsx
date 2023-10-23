@@ -115,7 +115,7 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
             </a>
           </div>
         </div>
-        <div className="first__screen-shadow relative bg-black text-white pb-[25px] xl:hidden">
+        <div className="video__shadow relative bg-black text-white pb-[25px] xl:hidden">
           <div className="mx-[4%] pt-1 pb-[15px]">
             <div className="block sm:hidden">
               <h2 className="text-[32px] leading-[38px] font-normal relative z-20">
