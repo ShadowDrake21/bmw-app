@@ -27,7 +27,7 @@ ul {
   display: none;
 }
 
-.first__screen-shadow::before {
+.video__shadow::before {
   content: '';
   position: absolute;
   z-index: 1;

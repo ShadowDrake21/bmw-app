@@ -1,5 +1,6 @@
 import firstScreenVideoURL from '../assets/model-i5/firstScreen/video_firstScreen.mp4'
 import firstScreenIcon from '../assets/model-i5/firstScreen/firstScreenIcon.png'
+import advantageVideoURL from '../assets/model-i5/advantageVideo/video_advantage.mp4'
 
 export interface IFirstScreenVideo {
   videoURL: string
@@ -14,6 +15,14 @@ export interface IFirstScreenVideo {
   importantInfoLink: string
 }
 
+export interface IAdvantageVideo {
+  videoURL: string
+  advantageType: string
+  title: string
+  text: string
+  modelType: string
+}
+
 export const firstScreenInfo: IFirstScreenVideo = {
   videoURL: firstScreenVideoURL,
   mainTitle: 'THE i5',
@@ -25,4 +34,12 @@ export const firstScreenInfo: IFirstScreenVideo = {
   laserOfferPrice: '$749',
   laserOfferDescription: '36 months; $6,649 due at signing',
   importantInfoLink: '#',
+}
+
+export const advantageVideoInfo = {
+  videoURL: advantageVideoURL,
+  advantageType: 'performance',
+  title: 'TAKE CENTER STAGE',
+  text: 'All-electric performance that captivates from start to finish. Energetic engineering, customizable drive modes, and all the torque you could ask for in a sleek midsize sedan.',
+  modelType: 'European model shown',
 }
