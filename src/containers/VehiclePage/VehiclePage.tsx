@@ -6,6 +6,8 @@ import VehicleModels from '../../components/VehicleModels/VehicleModels'
 import AdvantageVideo from '../../components/AdvantageVideo/AdvantageVideo'
 import Specifications from '../../components/Specifications/Specifications'
 import { specificationsInfo } from '../../static/specificationsText'
+import AdditionalAdvantages from '../../components/AdditionalAdvantages/AdditionalAdvantages'
+import { additionalAdvantagesInfo } from '../../static/additionalAddvantagesText'
 
 type Props = {}
 
@@ -17,6 +19,7 @@ const VehiclePage = (props: Props) => {
       <VehicleModels />
       <AdvantageVideo {...advantageVideoInfo} />
       <Specifications />
+      <AdditionalAdvantages advantages={additionalAdvantagesInfo} />
     </>
   )
 }

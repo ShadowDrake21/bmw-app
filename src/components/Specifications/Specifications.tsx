@@ -17,11 +17,13 @@ const Specifications = () => {
           </h3>
         </div>
         <ul className="flex flex-wrap justify-between gap-y-5 xl:flex-nowrap">
-          {specificationsInfo.map((specificationItem: ISpecifications) => (
-            <li className="w-[50%] xl:w-full">
-              <SpecificationItem {...specificationItem} />
-            </li>
-          ))}
+          {specificationsInfo.map(
+            (specificationItem: ISpecifications, index) => (
+              <li key={index} className="w-[50%] xl:w-full">
+                <SpecificationItem {...specificationItem} />
+              </li>
+            )
+          )}
         </ul>
       </div>
     </section>
