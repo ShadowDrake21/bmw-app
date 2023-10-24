@@ -5,9 +5,10 @@ import AnchorLinks from '../../components/AnchorLinks/AnchorLinks'
 import VehicleModels from '../../components/VehicleModels/VehicleModels'
 import AdvantageVideo from '../../components/AdvantageVideo/AdvantageVideo'
 import Specifications from '../../components/Specifications/Specifications'
-import { specificationsInfo } from '../../static/specificationsText'
 import AdditionalAdvantages from '../../components/AdditionalAdvantages/AdditionalAdvantages'
 import { additionalAdvantagesInfo } from '../../static/additionalAddvantagesText'
+import NewSound from '../../components/NewSound/NewSound'
+import { newSoundInfo } from '../../static/newSound'
 
 type Props = {}
 
@@ -20,6 +21,7 @@ const VehiclePage = (props: Props) => {
       <AdvantageVideo {...advantageVideoInfo} />
       <Specifications />
       <AdditionalAdvantages advantages={additionalAdvantagesInfo} />
+      <NewSound {...newSoundInfo} />
     </>
   )
 }
