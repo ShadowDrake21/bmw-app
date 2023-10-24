@@ -7,7 +7,7 @@ import AdditionalAdvantagesItem from './AdditionalAdvantagesItem'
 
 const AdditionalAdvantages = ({ advantages }: IAdditionalAdvantagesArray) => {
   return (
-    <section className="pb-10 sm:pb-[60px] xl:pb-[80px]">
+    <section className="pb-[80px] sm:pb-[60px] xl:pb-[80px]">
       <div className="mx-[8%]">
         <div className="flex flex-col gap-10 sm:flex-row ">
           {advantages.map((advantage: IAdditionalAdvantages, index) => (

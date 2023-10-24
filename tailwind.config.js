@@ -19,6 +19,9 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
         helveticaNeue: ['Helvetica Neue Light'],
       },
+      backgroundImage: {
+        'new-sound': "url('./assets/model-i5/newSound/newSoundBackground.jpg')",
+      },
     },
     screens: {
       xs: '480px',
