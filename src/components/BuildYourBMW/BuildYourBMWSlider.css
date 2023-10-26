@@ -1,0 +1,31 @@
+.slick__build-dots li {
+  width: 15px;
+  height: 15px;
+}
+
+.slick__build-dots li button {
+  padding: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.slick__build-dots li button::before {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+}
+
+.slick__build-dots li.slick-active button::before {
+  color: #1c69d3;
+  opacity: 1;
+}
+
+.slick__build-dots li.slick-active:hover button::before {
+  color: #0054c9;
+  opacity: 1;
+}
+
+.slick__build-dots li:hover button::before {
+  color: #707070;
+  opacity: 1;
+}

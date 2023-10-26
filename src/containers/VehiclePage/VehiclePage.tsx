@@ -9,6 +9,7 @@ import AdditionalAdvantages from '../../components/AdditionalAdvantages/Addition
 import { additionalAdvantagesInfo } from '../../static/additionalAddvantagesText'
 import NewSound from '../../components/NewSound/NewSound'
 import { newSoundInfo } from '../../static/newSound'
+import BuildYourBMW from '../../components/BuildYourBMW/BuildYourBMW'
 
 type Props = {}
 
@@ -22,6 +23,7 @@ const VehiclePage = (props: Props) => {
       <Specifications />
       <AdditionalAdvantages advantages={additionalAdvantagesInfo} />
       <NewSound {...newSoundInfo} />
+      <BuildYourBMW />
     </>
   )
 }
