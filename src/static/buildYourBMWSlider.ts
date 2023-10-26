@@ -32,8 +32,7 @@ export interface IBuildYourBMW {
   name: string
   adjective: string
   price: string
-  range: string
-  acceleration: string
+  speedInfo: string[]
   link: string
   additionalInfo: IBuildYourBMWAdditional
 }
@@ -51,9 +50,8 @@ export const buildYourBMWSliderInfo: IBuildYourBMW[] = [
     name: 'i5 eDRIVE40',
     adjective: 'Convenience',
     price: '$68,000',
-    range: '295 MILES',
-    acceleration: '5.7 SEC',
     link: '#',
+    speedInfo: ['295 MILES', '5.7 SEC'],
     additionalInfo: {
       preConfigText: ['Convenience Package', 'Sport Line'],
       preConfigPhotos: [
@@ -71,8 +69,7 @@ export const buildYourBMWSliderInfo: IBuildYourBMW[] = [
     name: 'i5 eDRIVE40',
     adjective: 'Sport',
     price: '$77,150',
-    range: '295 MILES',
-    acceleration: '5.7 SEC',
+    speedInfo: ['295 MILES', '5.7 SEC'],
     link: '#',
     additionalInfo: {
       preConfigText: [
@@ -94,8 +91,7 @@ export const buildYourBMWSliderInfo: IBuildYourBMW[] = [
     name: 'i5 M60',
     adjective: 'Performance',
     price: '$88,600',
-    range: '256 MILES',
-    acceleration: '3.7 SEC',
+    speedInfo: ['256 MILES', '3.7 SEC'],
     link: '#',
     additionalInfo: {
       preConfigText: ['Executive Package', 'Sky Lounge Roof'],

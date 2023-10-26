@@ -22,6 +22,9 @@ module.exports = {
       backgroundImage: {
         'new-sound': "url('./assets/model-i5/newSound/newSoundBackground.jpg')",
       },
+      dropShadow: {
+        '10px': '0 10px 5px #e9e9e9',
+      },
     },
     screens: {
       xs: '480px',
