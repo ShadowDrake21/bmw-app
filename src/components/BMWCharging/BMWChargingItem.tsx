@@ -1,0 +1,50 @@
+import React from 'react'
+import { IBMWCharging } from '../../static/BMWCharging'
+import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
+
+const BMWChargingItem = (item: IBMWCharging) => {
+  const { img, title, info, charging, link } = item
+
+  const setQuestionMark = () => {
+    return (
+      <QuestionMarkCircleIcon className="inline-block w-4 h-4 text-[#727171] cursor-pointer" />
+    )
+  }
+
+  return (
+    <div>
+      <div>
+        <div className="mb-5">
+          <img src={img} alt="BMW Charging item" />
+        </div>
+        <div>
+          <h4 className="text-[14px] leading-[17px] font-bold tracking-[0.25px] mb-[10px]">
+            {title.titleText}{' '}
+            <span>{title.thereIsIcon && setQuestionMark()}</span>
+          </h4>
+          <div className="flex flex-col text-xs leading-[18px] font-normal gap-4 tracking-[.5px]">
+            <p>
+              {info.infoText}{' '}
+              <span>{info.thereIsIcon && setQuestionMark()}</span>
+            </p>
+            <p>
+              {charging.chargingText}{' '}
+              <span>{charging.thereIsIcon && setQuestionMark()}</span>
+            </p>
+            {item.link.thereIsLink && (
+              <div>
+                <a href={link.linkURL}>
+                  <span className="text-[#1c69d3] font-bold border-b border-[#1c69d3] text-[11px] leading-[13px] tracking-[.25px]">
+                    {link.linkText}
+                  </span>
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default BMWChargingItem
