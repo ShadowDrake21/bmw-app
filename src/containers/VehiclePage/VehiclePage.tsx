@@ -11,6 +11,8 @@ import NewSound from '../../components/NewSound/NewSound'
 import { newSoundInfo } from '../../static/newSound'
 import BuildYourBMW from '../../components/BuildYourBMW/BuildYourBMW'
 import UnlimitedHorizons from '../../components/UnlimitedHorizons/UnlimitedHorizons'
+import BMWCharging from '../../components/BMWCharging/BMWCharging'
+import { BMWChargingInfo } from '../../static/BMWCharging'
 
 type Props = {}
 
@@ -26,6 +28,7 @@ const VehiclePage = (props: Props) => {
       <NewSound {...newSoundInfo} />
       <BuildYourBMW />
       <UnlimitedHorizons />
+      <BMWCharging array={BMWChargingInfo} />
     </>
   )
 }

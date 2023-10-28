@@ -37,7 +37,7 @@ const Footer = (props: Props) => {
           <div className="text-base font-bold text-black pt-4 text-center">
             © Made by{' '}
             <a href="https://github.com/ShadowDrake21">
-              Dmytro "Drake" Krapyvianski
+              Dmytro "Drake" Krapyvianskyi
             </a>
           </div>
         </div>
