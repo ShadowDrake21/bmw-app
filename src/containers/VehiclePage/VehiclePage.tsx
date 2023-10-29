@@ -13,6 +13,8 @@ import BuildYourBMW from '../../components/BuildYourBMW/BuildYourBMW'
 import UnlimitedHorizons from '../../components/UnlimitedHorizons/UnlimitedHorizons'
 import BMWCharging from '../../components/BMWCharging/BMWCharging'
 import { BMWChargingInfo } from '../../static/BMWCharging'
+import ForwardThinkingFeatures from '../../components/ForwardThinkingFeatures/ForwardThinkingFeatures'
+import { forwardThinkingFeaturesInfo } from '../../static/forwardThinkingFeaturesText'
 
 type Props = {}
 
@@ -29,6 +31,7 @@ const VehiclePage = (props: Props) => {
       <BuildYourBMW />
       <UnlimitedHorizons />
       <BMWCharging array={BMWChargingInfo} />
+      <ForwardThinkingFeatures array={forwardThinkingFeaturesInfo} />
     </>
   )
 }
