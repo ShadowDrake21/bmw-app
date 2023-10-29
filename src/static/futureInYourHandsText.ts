@@ -36,7 +36,7 @@ export interface IFutureInYourHands {
 export const futureInYourHandsInfo: IFutureInYourHands[] = [
   {
     blockId: 1,
-    blockName: 'intelligent-systems',
+    blockName: 'intelligent systems',
     firstHalf: {
       type: typesOfMedia.Video,
       src: futureInYourHandsVideo,
@@ -57,7 +57,7 @@ export const futureInYourHandsInfo: IFutureInYourHands[] = [
   },
   {
     blockId: 2,
-    blockName: 'gaming-and-streaming',
+    blockName: 'gaming & streaming',
     firstHalf: {
       type: typesOfMedia.Image,
       src: futureInYourHandsPhoto1,
@@ -78,7 +78,7 @@ export const futureInYourHandsInfo: IFutureInYourHands[] = [
   },
   {
     blockId: 3,
-    blockName: 'my-bmw-app',
+    blockName: 'my BMW app',
     firstHalf: {
       type: typesOfMedia.Image,
       src: futureInYourHandsPhoto2,
@@ -99,7 +99,7 @@ export const futureInYourHandsInfo: IFutureInYourHands[] = [
   },
   {
     blockId: 4,
-    blockName: 'perfected-parking',
+    blockName: 'perfected parking',
     firstHalf: {
       type: typesOfMedia.Image,
       src: futureInYourHandsPhoto3,
