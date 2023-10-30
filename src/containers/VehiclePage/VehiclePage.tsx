@@ -16,6 +16,7 @@ import { BMWChargingInfo } from '../../static/BMWCharging'
 import ForwardThinkingFeatures from '../../components/ForwardThinkingFeatures/ForwardThinkingFeatures'
 import { forwardThinkingFeaturesInfo } from '../../static/forwardThinkingFeaturesText'
 import FutureInYourHands from '../../components/FutureInYourHands/FutureInYourHands'
+import Design from '../../components/Design/Design'
 
 type Props = {}
 
@@ -34,6 +35,7 @@ const VehiclePage = (props: Props) => {
       <BMWCharging array={BMWChargingInfo} />
       <ForwardThinkingFeatures array={forwardThinkingFeaturesInfo} />
       <FutureInYourHands />
+      <Design />
     </>
   )
 }
