@@ -17,6 +17,8 @@ import ForwardThinkingFeatures from '../../components/ForwardThinkingFeatures/Fo
 import { forwardThinkingFeaturesInfo } from '../../static/forwardThinkingFeaturesText'
 import FutureInYourHands from '../../components/FutureInYourHands/FutureInYourHands'
 import Design from '../../components/Design/Design'
+import MakeItYours from '../../components/MakeItYours/MakeItYours'
+import { makeItYoursInfo } from '../../static/makeItYoursText'
 
 type Props = {}
 
@@ -36,6 +38,7 @@ const VehiclePage = (props: Props) => {
       <ForwardThinkingFeatures array={forwardThinkingFeaturesInfo} />
       <FutureInYourHands />
       <Design />
+      <MakeItYours {...makeItYoursInfo} />
     </>
   )
 }
