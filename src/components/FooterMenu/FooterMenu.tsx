@@ -5,7 +5,7 @@ type Props = {}
 
 const FooterMenu = (props: Props) => {
   return (
-    <div className="py-12 bg-[#F6F6F6] xl:pt-20">
+    <section className="py-12 bg-[#F6F6F6] xl:pt-20">
       <div className="mx-4 xl:mx-9">
         <div className="sm:grid sm:grid-cols-2 xl:grid-cols-4 xl:grid-flow-col">
           {footerMenuInfo.map((menuItem) => (
@@ -24,7 +24,7 @@ const FooterMenu = (props: Props) => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -6,7 +6,7 @@ type Props = {}
 
 const AllBMWModels = (props: Props) => {
   return (
-    <div className="border-t border-[#e6e6e6]">
+    <section className="border-t border-[#e6e6e6]">
       <div className="text-center py-4">
         <a
           href="#"
@@ -37,7 +37,7 @@ const AllBMWModels = (props: Props) => {
           </Draggable>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

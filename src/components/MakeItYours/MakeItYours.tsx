@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import { IMakeItYours, IMakeItYoursPhotos } from '../../static/makeItYoursText'
 import { useIsInViewport, useWindowDimensions } from '../../utils/utils'
 import { ChevronRightIcon } from '@heroicons/react/24/solid'
@@ -21,7 +21,6 @@ const MakeItYoursPhoto = (photoItem: IMakeItYoursPhotos) => {
 }
 
 const MakeItYours = (object: IMakeItYours) => {
-  const { width } = useWindowDimensions()
   const { textContent, photoContent } = object
   const { type, title, leaseOfferInfo, links } = textContent
 
@@ -34,15 +33,16 @@ const MakeItYours = (object: IMakeItYours) => {
   const ref = useRef(null)
 
   const isInViewport = useIsInViewport(ref)
-  console.log('isInViewport1: ', isInViewport)
 
   return (
-    <section>
+    <section id="make-it-yours">
       <div className="sm:flex sm:flex-row-reverse relative">
-        <div className="py-[60px] sm:w-1/2 xl:w-2/5 xl:py-[80px]">
+        <div className="pt-[60px] pb-10 sm:w-1/2 xl:w-2/5 xl:py-[80px]">
           <div
             className={`${
-              isInViewport ? 'xl:top-[130px] xl:fixed xl:w-2/5' : 'xl:static'
+              isInViewport
+                ? 'xxl:top-[130px] xxl:fixed xxl:w-2/5'
+                : 'xxl:static'
             }`}
           >
             <div className="mx-[8%] text-[#221f1f]">
@@ -121,7 +121,11 @@ const MakeItYours = (object: IMakeItYours) => {
           <div>
             <MakeItYoursPhoto {...photoContent[0]} />
           </div>
-          <div ref={ref}>
+          <div className="relative">
+            <div
+              ref={ref}
+              className="absolute top-0 w-full h-1/3 bg-transparent -z-10"
+            />
             <MakeItYoursPhoto {...photoContent[1]} />
           </div>
           <div className="flex">

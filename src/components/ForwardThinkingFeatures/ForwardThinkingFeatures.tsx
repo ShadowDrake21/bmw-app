@@ -9,7 +9,7 @@ const ForwardThinkingFeatures = ({ array }: IForwardThinkingFeaturesArray) => {
   const { width } = useWindowDimensions()
 
   return (
-    <section className="pt-[60px] xl:pt-[80px]">
+    <section id="safety-and-technology" className="pt-[60px] xl:pt-[80px]">
       <div>
         <div>
           <div className="mx-[8%] text-center relative z-10 text-[#221f1f] sm:mx-[14%] xl:mx-[18%]">
