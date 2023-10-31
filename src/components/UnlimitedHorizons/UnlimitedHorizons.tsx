@@ -29,7 +29,10 @@ const UnlimitedHorizons = (props: Props) => {
   }
 
   return (
-    <section className="pt-[100px] pb-[50px] sm:pt-[120px] xl:pt-[140px] sm:pb-[60px] xl:pb-[70px]">
+    <section
+      id="range-and-charging"
+      className="pt-[100px] pb-[50px] sm:pt-[120px] xl:pt-[140px] sm:pb-[60px] xl:pb-[70px]"
+    >
       <div>
         <div className="mx-[8%] text-center text-[#221f1f] pb-10 sm:mx-[12%] xl:mx-[20%] xl:pb-[50px]">
           <h2 className="text-[11px] leading-[13px] font-bold tracking-[2.75px] mb-[10px] xl:text-xs">

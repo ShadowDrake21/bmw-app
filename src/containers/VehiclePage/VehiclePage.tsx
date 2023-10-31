@@ -19,6 +19,10 @@ import FutureInYourHands from '../../components/FutureInYourHands/FutureInYourHa
 import Design from '../../components/Design/Design'
 import MakeItYours from '../../components/MakeItYours/MakeItYours'
 import { makeItYoursInfo } from '../../static/makeItYoursText'
+import AtGlance from '../../components/AtGlance/AtGlance'
+import { atGlanceInfo } from '../../static/atGlance'
+import AllBMWModels from '../../components/AllBMWModels/AllBMWModels'
+import FooterMenu from '../../components/FooterMenu/FooterMenu'
 
 type Props = {}
 
@@ -39,6 +43,9 @@ const VehiclePage = (props: Props) => {
       <FutureInYourHands />
       <Design />
       <MakeItYours {...makeItYoursInfo} />
+      <AtGlance {...atGlanceInfo} />
+      <AllBMWModels />
+      <FooterMenu />
     </>
   )
 }

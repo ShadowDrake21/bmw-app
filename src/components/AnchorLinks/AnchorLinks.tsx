@@ -7,7 +7,7 @@ type Props = {}
 
 const AnchorLinks = (props: Props) => {
   return (
-    <div className="bg-[#f6f6f6]">
+    <section className="bg-[#f6f6f6]">
       <Draggable rootClass="model__draggable">
         <ul className="flex items-center gap-8 overflow-x-auto py-5 sm:py-6 xl:py-7 xl:justify-center xl:cursor-default">
           {anchorLinksInfo.map(({ href, text }, index) => (
@@ -23,7 +23,7 @@ const AnchorLinks = (props: Props) => {
           ))}
         </ul>
       </Draggable>
-    </div>
+    </section>
   )
 }
 

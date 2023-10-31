@@ -37,7 +37,7 @@ const SliderBlock = ({
     fade: true,
   }
   return (
-    <div className={`${className}`}>
+    <section className={`${className}`}>
       <Slider {...settings}>
         {array.map(({ photos, texts, links, index }: any) => (
           <div key={index} className="relative">
@@ -82,7 +82,7 @@ const SliderBlock = ({
           </div>
         ))}
       </Slider>
-    </div>
+    </section>
   )
 }
 

@@ -9,7 +9,7 @@ const BuildBMWDreams = (props: Props) => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
   return (
-    <div ref={ref}>
+    <section ref={ref}>
       <div
         style={{
           transform: isInView ? 'none' : 'translateY(50px)',
@@ -37,7 +37,7 @@ const BuildBMWDreams = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
