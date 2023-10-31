@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window
@@ -34,4 +34,26 @@ export const changeDisplay = (isToggled: boolean, element?: HTMLElement) => {
   }
 
   return (displayStyle = displayStyle === 'none' ? 'block' : 'none')
+}
+
+export function useIsInViewport(ref: any) {
+  const [isIntersecting, setIsIntersecting] = useState(false)
+
+  const observer = useMemo(
+    () =>
+      new IntersectionObserver(([entry]) =>
+        setIsIntersecting(entry.isIntersecting)
+      ),
+    []
+  )
+
+  useEffect(() => {
+    observer.observe(ref.current)
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [ref, observer])
+
+  return isIntersecting
 }
