@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { IBMWCharging } from '../../static/BMWCharging'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
+import { useInView } from 'framer-motion'
+import { getMotionStyles } from '../../utils/utils'
 
 const BMWChargingItem = (item: IBMWCharging) => {
   const { img, title, info, charging, link } = item
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
 
   const setQuestionMark = () => {
     return (
@@ -12,9 +17,12 @@ const BMWChargingItem = (item: IBMWCharging) => {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full" ref={ref}>
       <div className="flex flex-col items-center">
-        <div className="mb-5 w-full xl:mb-[25px]">
+        <div
+          className="mb-5 w-full xl:mb-[25px]"
+          style={getMotionStyles(isInView)}
+        >
           <img src={img} alt="BMW Charging item" className="w-full" />
         </div>
         <div className="w-full sm:w-[95%] xl:w-[90%]">

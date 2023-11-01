@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { IVehicleModels } from '../../static/vehicleModels'
 import { ChevronRightIcon } from '@heroicons/react/24/solid'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
+import { useInView } from 'framer-motion'
+import { getMotionStyles } from '../../utils/utils'
 
 const VehicleModelsItem = (vehicleModelItem: IVehicleModels) => {
   const {
@@ -16,8 +18,12 @@ const VehicleModelsItem = (vehicleModelItem: IVehicleModels) => {
   } = vehicleModelItem
 
   const [isModelHover, setIsModelHover] = useState<boolean>(false)
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
   return (
-    <div>
+    <div ref={ref} style={getMotionStyles(isInView)}>
       <a
         href={mainLink}
         className="inline-block max-w-[500px] w-[70%] relative text-[#221f1f]"

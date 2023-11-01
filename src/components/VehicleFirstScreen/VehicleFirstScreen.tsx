@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { IFirstScreenVideo } from '../../static/videoItems'
 import leaseOfferIcon from '@/assets/model-i5/firstScreen/lease_offer-svg.svg'
 import VehicleAddNavBar from '../VehicleAddNavBar/VehicleAddNavBar'
+import { useInView } from 'framer-motion'
+import { getMotionStyles } from '../../utils/utils'
 
 const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
   const {
@@ -30,6 +32,9 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
   return (
     <>
       <VehicleAddNavBar
@@ -37,7 +42,7 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
         title="The i5"
         link={btnLink}
       />
-      <section className="max-h-full h-full">
+      <section className="max-h-full h-full" ref={ref}>
         <div className="relative">
           <video
             src={videoURL}
@@ -47,7 +52,10 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
             className="min-h-[500px] object-cover w-full"
           />
           <div className="hidden absolute w-full h-full top-0 text-white mx-[4%] sm:block">
-            <div className="absolute top-1/2 -translate-y-1/2 sm:w-[30%] xl:top-[38%] xl:flex xl:flex-col">
+            <div
+              className="absolute top-1/2 -translate-y-1/2 sm:w-[30%] xl:top-[38%] xl:flex xl:flex-col"
+              style={getMotionStyles(isInView)}
+            >
               <h2 className="text-[32px] leading-[38px] font-normal relative z-20 top-0 sm:text-[42px] sm:leading-[50px] xl:text-[56px] xl:leading-[68px]">
                 {mainTitle}
               </h2>
@@ -117,7 +125,14 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
         </div>
         <div className="video__shadow relative bg-black text-white pb-[25px] xl:hidden">
           <div className="mx-[4%] pt-1 pb-[15px]">
-            <div className="block sm:hidden">
+            <div
+              className="block sm:hidden"
+              style={{
+                transform: isInView ? 'none' : 'translateY(50px)',
+                opacity: isInView ? 1 : 0,
+                transition: 'all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 1s',
+              }}
+            >
               <h2 className="text-[32px] leading-[38px] font-normal relative z-20">
                 {mainTitle}
               </h2>
