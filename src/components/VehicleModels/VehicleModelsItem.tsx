@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { IVehicleModels } from '../../static/vehicleModels'
 import { ChevronRightIcon } from '@heroicons/react/24/solid'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
@@ -53,12 +53,12 @@ const VehicleModelsItem = (vehicleModelItem: IVehicleModels) => {
             <div
               className={`${
                 isModelHover && 'text-[#1c69d3]'
-              } text-base leading-5 tracking-[-0.1px] font-bold flex justify-center mb-[5px] sm:text-lg sm:leading-[22px] xl:text-xl xl:leading-6 sm:mb-[10px]`}
+              } text-base leading-5 tracking-minusSX font-bold flex justify-center mb-[5px] sm:text-lg sm:leading-[22px] xl:text-xl xl:leading-6 sm:mb-[10px]`}
             >
               <h3>{name}</h3>
               <ChevronRightIcon className="w-5 text-[#1c69d3]" />
             </div>
-            <div className="flex justify-center items-center gap-[2px] text-xs tracking-[.25px] font-normal cursor-text sm:text-[13px]">
+            <div className="flex justify-center items-center gap-[2px] text-xs tracking-0.25 font-normal cursor-text sm:text-13">
               <span>{price}</span>
               <QuestionMarkCircleIcon className="w-[14px] cursor-pointer" />
             </div>
@@ -68,7 +68,7 @@ const VehicleModelsItem = (vehicleModelItem: IVehicleModels) => {
       <div className="text-center">
         <a
           href={secondaryLink}
-          className="text-xs tracking-[0.25px] font-bold capitalize border-b border-[#4c4c4c] transition-colors duration-150 hover:text-[#1c69d3] sm:text-[13px]"
+          className="text-xs tracking-0.25 font-bold capitalize border-b border-[#4c4c4c] transition-colors duration-150 hover:text-[#1c69d3] sm:text-13"
         >
           see full specifications
         </a>

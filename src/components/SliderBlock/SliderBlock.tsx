@@ -10,7 +10,7 @@ const defaultSliderSettings: ISliderSettings = {
   textTitleClasses:
     'text-[32px] leading-[38px] sm:text-[42px] sm:leading-[50px] xl:text-[56px] xl:leading-[68px]',
   textDescrClasses:
-    'text-xl xl:text-[28px] sm:text-[23px] sm:leading-[31px] xl:leading-[37px]',
+    'text-xl xl:text-28 sm:text-23 sm:leading-[31px] xl:leading-[37px]',
   positionClasses: 'bottom-[90px] sm:top-[100px]',
 }
 
@@ -68,7 +68,7 @@ const SliderBlock = ({
                   <a
                     key={index + text}
                     href={linkText}
-                    className={`inline-block z-50 relative text-[13px] text-center leading-normal px-[3px] w-[43%] py-3 mr-5 ${
+                    className={`inline-block z-50 relative text-13 text-center leading-normal px-[3px] w-[43%] py-3 mr-5 ${
                       color === 'white'
                         ? 'text-black bg-white'
                         : 'text-white bg-[#1c69d3]'

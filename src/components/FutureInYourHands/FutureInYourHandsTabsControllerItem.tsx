@@ -22,11 +22,11 @@ const FutureInYourHandsTabsControllerItem = (item: any) => {
             />
           )}
         </div>
-        <div className="font-normal sm:mx-[8%] xl:mx-[12%]">
-          <h2 className="text-xl tracking-[-.1px] mb-5 sm:text-[23px] sm:leading-[31px] xl:text-[28px] xl:leading-[37px]">
+        <div className="font-normal sm:mx-normalProcents xl:mx-[12%]">
+          <h2 className="text-xl tracking-minusSX mb-5 sm:text-23 sm:leading-[31px] xl:text-28 xl:leading-[37px]">
             {item.secondHalf?.title}
           </h2>
-          <p className="text-sm tracking-[0.5px] sm:text-[15px] sm:leading-6 xl:text-[16px] xl:leading-[26px]">
+          <p className="text-sm tracking-0.5 sm:text-15 sm:leading-6 xl:text-base xl:leading-[26px]">
             {item.secondHalf?.textInfo.textContent}{' '}
             <span>
               {item.secondHalf?.textInfo.thereIsIcon && (
@@ -37,7 +37,7 @@ const FutureInYourHandsTabsControllerItem = (item: any) => {
           {item.secondHalf?.link.thereIsLink && (
             <a
               href={item.secondHalf?.link.url}
-              className="text-sm tracking-[0.5px] font-bold capitalize border-b border-[#221f1f]  sm:text-[15px] sm:leading-6 xl:text-[16px] xl:leading-[26px]"
+              className="text-sm tracking-0.5 font-bold capitalize border-b border-[#221f1f]  sm:text-15 sm:leading-6 xl:text-base xl:leading-[26px]"
             >
               {item.secondHalf?.link.text}
             </a>

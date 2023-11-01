@@ -40,15 +40,15 @@ const UnlimitedHorizons = (props: Props) => {
       ref={ref}
     >
       <div>
-        <div className="mx-[8%] text-center text-[#221f1f] pb-10 sm:mx-[12%] xl:mx-[20%] xl:pb-[50px]">
-          <h2 className="text-[11px] leading-[13px] font-bold tracking-[2.75px] mb-[10px] xl:text-xs">
+        <div className="mx-normalProcents text-center text-[#221f1f] pb-10 sm:mx-[12%] xl:mx-[20%] xl:pb-[50px]">
+          <h2 className="text-11 leading-[13px] font-bold tracking-2.75 mb-[10px] xl:text-xs">
             RANGE & CHARGING
           </h2>
-          <h3 className="text-2xl leading-[30px] font-normal tracking-[-0.1px] mb-[10px] sm:text-[30px] sm:leading-[38px] xl:text-[39px] xl:leading-[48px]">
+          <h3 className="text-2xl leading-[30px] font-normal tracking-minusSX mb-[10px] sm:text-[30px] sm:leading-[38px] xl:text-[39px] xl:leading-[48px]">
             UNLIMITED HORIZONS
           </h3>
           <div className="mb-5 xl:mb-[25px]">
-            <p className="tracking-[0.5px] text-base font-normal sm:text-lg">
+            <p className="tracking-0.5 text-base font-normal sm:text-lg">
               Drive farther, live more. With a battery capacity of up to 84.3
               kWh and an estimated range from 240 to 295 miles, the BMW i5
               models can take you anywhere you need to go.
@@ -58,7 +58,7 @@ const UnlimitedHorizons = (props: Props) => {
             href="#"
             className="inline-block px-[35px] pt-[18px] pb-[17px] rounded-sm bg-[#1c69d3] text-white hover:text-[#ebebeb] hover:bg-[#1d55a2]"
           >
-            <span className="capitalize text-[15px] leading-5 tracking-[0.5px] font-bold">
+            <span className="capitalize text-15 leading-5 tracking-0.5 font-bold">
               map your route
             </span>
           </a>
@@ -70,19 +70,21 @@ const UnlimitedHorizons = (props: Props) => {
           />
         </div>
         <div className="flex justify-center gap-[5%] xl:gap-[12%]">
-          {unlimitedHorizonsCharacteristics.map(({ numMiles, modelName }) => (
-            <div className="text-center">
-              <div className="relative pr-5 mb-[10px]">
-                <p className="text-base leading-5 tracking-[-.1px] font-bold sm:text-lg sm:leading-[22px] xl:text-xl xl:leading-6">
-                  {numMiles}
-                </p>
-                <QuestionMarkCircleIcon className="w-4 h-4 text-[#727171] absolute right-0 top-1/2 -translate-y-1/2" />
+          {unlimitedHorizonsCharacteristics.map(
+            ({ numMiles, modelName }, index) => (
+              <div key={index} className="text-center">
+                <div className="relative pr-5 mb-[10px]">
+                  <p className="text-base leading-5 tracking-minusSX font-bold sm:text-lg sm:leading-[22px] xl:text-xl xl:leading-6">
+                    {numMiles}
+                  </p>
+                  <QuestionMarkCircleIcon className="w-4 h-4 text-[#727171] absolute right-0 top-1/2 -translate-y-1/2" />
+                </div>
+                <span className="text-sm font-normal tracking-0.5 sm:text-15 sm:leading-6 xl:text-base xl:leading-[26px]">
+                  {modelName}
+                </span>
               </div>
-              <span className="text-sm font-normal tracking-[0.5px] sm:text-[15px] sm:leading-6 xl:text-base xl:leading-[26px]">
-                {modelName}
-              </span>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </section>

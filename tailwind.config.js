@@ -25,6 +25,27 @@ module.exports = {
       dropShadow: {
         '10px': '0 10px 5px #e9e9e9',
       },
+      fontSize: {
+        11: '11px',
+        13: '13px',
+        15: '15px',
+        23: '23px',
+        28: '28px',
+      },
+      letterSpacing: {
+        minusSX: '-0.1px',
+        0.25: '0.25px',
+        0.5: '0.5px',
+        2.75: '2.75px',
+      },
+      margin: {
+        smallProcents: '4%',
+        normalProcents: '8%',
+      },
+      padding: {
+        60: '60px',
+        80: '80px',
+      },
     },
     screens: {
       xs: '480px',

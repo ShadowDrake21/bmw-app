@@ -24,19 +24,19 @@ const DesignFirstScreen = (item: IDesignFirstScreen) => {
         ref={ref}
       >
         <div
-          className="mx-[8%] sm:flex sm:gap-10"
+          className="mx-normalProcents sm:flex sm:gap-10"
           style={getMotionStyles(isInView)}
         >
           <div className="sm:w-full">
-            <h2 className="relative z-[2] text-[11px] leading-[13px] font-bold uppercase tracking-[2.75px] mb-[10px] xl:text-xs">
+            <h2 className="relative z-[2] text-11 leading-[13px] font-bold uppercase tracking-2.75 mb-[10px] xl:text-xs">
               {textData.type}
             </h2>
-            <h3 className="relative z-[2] uppercase text-2xl leading-[30px] tracking-[-0.1px] font-normal sm:text-[30px] sm:leading-[38px] xl:text-[39px] xl:leading-[48px]">
+            <h3 className="relative z-[2] uppercase text-2xl leading-[30px] tracking-minusSX font-normal sm:text-[30px] sm:leading-[38px] xl:text-[39px] xl:leading-[48px]">
               {textData.title}
             </h3>
           </div>
           <div className="sm:w-full">
-            <p className="relative z-[2] text-sm font-normal sm:text-[15px] sm:leading-6 xl:text-base xl:leading-[26px]">
+            <p className="relative z-[2] text-sm font-normal sm:text-15 sm:leading-6 xl:text-base xl:leading-[26px]">
               {textData.text}
             </p>
           </div>

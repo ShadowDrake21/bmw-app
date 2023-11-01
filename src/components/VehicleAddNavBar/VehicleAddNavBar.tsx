@@ -29,7 +29,7 @@ const VehicleAddNavBar = ({ isTopOfPage, title, link }: any) => {
             <span
               className={`${
                 isTopOfPage ? 'text-[#f6f6f6]' : 'text-[#221f1f]'
-              } text-sm tracking-[0.25px] sm:text-[15px] sm:leading-[18px]`}
+              } text-sm tracking-0.25 sm:text-15 sm:leading-[18px]`}
             >
               {title}
             </span>
@@ -37,7 +37,7 @@ const VehicleAddNavBar = ({ isTopOfPage, title, link }: any) => {
               <div
                 className={`${
                   isTopOfPage ? 'text-[#cacaca]' : 'text-[#4c4c4c]'
-                } relative pt-[5px] text-xs tracking-[.25px] pr-4 sm:text-[13px] sm:leading-4`}
+                } relative pt-[5px] text-xs tracking-0.25 pr-4 sm:text-13 sm:leading-4`}
               >
                 <span>Overview</span>
                 <ChevronDownIcon className="absolute w-[10px] right-0 top-[10px]" />
@@ -74,7 +74,7 @@ const VehicleAddNavBar = ({ isTopOfPage, title, link }: any) => {
                       index === 1 && 'pr-4'
                     } relative h-full`}
                   >
-                    <span className="text-[13px] leading-4 tracking-[.25px] capitalize">
+                    <span className="text-13 leading-4 tracking-0.25 capitalize">
                       {xlLink.title}
                     </span>
                     {index === 1 && (
@@ -97,7 +97,7 @@ const VehicleAddNavBar = ({ isTopOfPage, title, link }: any) => {
               <span
                 className={`${
                   isTopOfPage ? 'hover:text-[#4c4c4c]' : 'text-white'
-                } capitalize text-[13px] leading-4 font-bold tracking-[.5px] `}
+                } capitalize text-13 leading-4 font-bold tracking-0.5 `}
               >
                 Contact dealer
               </span>

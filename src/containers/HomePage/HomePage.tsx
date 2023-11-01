@@ -1,5 +1,3 @@
-import React from 'react'
-import NavBar from '../../components/NavBar/NavBar'
 import SliderBlock from '../../components/SliderBlock/SliderBlock'
 import {
   advantagesSliderPhotos,
@@ -11,7 +9,6 @@ import { secondarySliderMainPage } from '../../static/customeSliderSettings'
 import Ownership from '../../components/Ownership/Ownership'
 import AllBMWModels from '../../components/AllBMWModels/AllBMWModels'
 import FooterMenu from '../../components/FooterMenu/FooterMenu'
-import Footer from '../../components/Footer/Footer'
 
 type Props = {}
 

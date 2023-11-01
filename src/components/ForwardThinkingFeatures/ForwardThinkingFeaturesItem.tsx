@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { IForwardThinkingFeatures } from '../../static/forwardThinkingFeaturesText'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
 import { useInView } from 'framer-motion'
@@ -19,10 +19,10 @@ const ForwardThinkingFeaturesItem = (item: IForwardThinkingFeatures) => {
           <img src={image} alt="safety and technology" />
         </div>
         <div className="w-full text-[#221f1f] sm:text-center">
-          <h4 className="text-base leading-5 font-bold tracking-[.5px] mb-[10px] sm:text-[18px] sm:leading-[22px]">
+          <h4 className="text-base leading-5 font-bold tracking-0.5 mb-[10px] sm:text-[18px] sm:leading-[22px]">
             {title}
           </h4>
-          <p className="text-xs leading-[18px] font-normal tracking-[.5px] sm:text-[13px] sm:leading-5">
+          <p className="text-xs leading-[18px] font-normal tracking-0.5 sm:text-13 sm:leading-5">
             {textInfo.textContent}{' '}
             <span>
               {textInfo.thereIsIcon && (
