@@ -27,7 +27,7 @@ const BuildBMWDreamsItem = (dreamBMW: IBuildBMWDreams) => {
             href={link}
             className="pb-[2px] relative after:content-[''] after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#221f1f]"
           >
-            <span className="text-[#221f1f] text-xs font-bold tracking-[0.25px] capitalize transition-all duration-150 hover:text-[#1d55a2] sm:text-[15px] sm:leading-[18px] xl:text-base xl:leading-5">
+            <span className="text-[#221f1f] text-xs font-bold tracking-[0.25px] capitalize transition-all duration-150 hover:text-[#1d55a2] sm:text-15px sm:leading-[18px] xl:text-base xl:leading-5">
               Start Designing
             </span>
           </a>

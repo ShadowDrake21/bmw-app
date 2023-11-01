@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { ISpecifications } from '../../static/specificationsText'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
 import { getMotionStyles } from '../../utils/utils'

@@ -25,6 +25,9 @@ module.exports = {
       dropShadow: {
         '10px': '0 10px 5px #e9e9e9',
       },
+      fontSize: {
+        '15px': '15px',
+      },
     },
     screens: {
       xs: '480px',

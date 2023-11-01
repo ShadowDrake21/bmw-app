@@ -58,7 +58,7 @@ const UnlimitedHorizons = (props: Props) => {
             href="#"
             className="inline-block px-[35px] pt-[18px] pb-[17px] rounded-sm bg-[#1c69d3] text-white hover:text-[#ebebeb] hover:bg-[#1d55a2]"
           >
-            <span className="capitalize text-[15px] leading-5 tracking-[0.5px] font-bold">
+            <span className="capitalize text-15px leading-5 tracking-[0.5px] font-bold">
               map your route
             </span>
           </a>
@@ -78,7 +78,7 @@ const UnlimitedHorizons = (props: Props) => {
                 </p>
                 <QuestionMarkCircleIcon className="w-4 h-4 text-[#727171] absolute right-0 top-1/2 -translate-y-1/2" />
               </div>
-              <span className="text-sm font-normal tracking-[0.5px] sm:text-[15px] sm:leading-6 xl:text-base xl:leading-[26px]">
+              <span className="text-sm font-normal tracking-[0.5px] sm:text-15px sm:leading-6 xl:text-base xl:leading-[26px]">
                 {modelName}
               </span>
             </div>

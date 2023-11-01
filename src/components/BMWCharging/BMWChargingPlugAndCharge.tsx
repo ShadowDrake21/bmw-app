@@ -11,7 +11,7 @@ const BMWChargingPlugAndCharge = (props: Props) => {
           <img src={img} alt="Plug and Charge" />
         </div>
         <div className="w-full">
-          <h4 className="text-[14px] leading-[17px] font-bold tracking-[0.25px] mb-[10px] sm:text-[15px] sm:leading-6 xl:text-base xl:leading-[26px]">
+          <h4 className="text-[14px] leading-[17px] font-bold tracking-[0.25px] mb-[10px] sm:text-15px sm:leading-6 xl:text-base xl:leading-[26px]">
             Plug and Charge
           </h4>
           <p className="text-xs leading-[18px] font-normal gap-4 tracking-[.5px] sm:text-[13px] sm:leading-5">

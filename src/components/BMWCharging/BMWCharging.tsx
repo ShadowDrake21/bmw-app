@@ -28,7 +28,7 @@ const BMWCharging = ({ array }: IBMWChargingArray) => {
             href="#"
             className="inline-block  px-[25px] pt-[15px] pb-[14px] rounded-sm bg-[#1c69d3] text-white hover:text-[#ebebeb] hover:bg-[#1d55a2] xl:px-[35px] xl:pt-[17px] xl:pb-4"
           >
-            <span className="capitalize text-[13px] leading-4 tracking-[0.5px] font-bold xl:text-[15px] xl:leading-5">
+            <span className="capitalize text-[13px] leading-4 tracking-[0.5px] font-bold xl:text-15px xl:leading-5">
               explore BMW charging
             </span>
           </a>

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { IBMWCharging } from '../../static/BMWCharging'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
 import { useInView } from 'framer-motion'
@@ -26,7 +26,7 @@ const BMWChargingItem = (item: IBMWCharging) => {
           <img src={img} alt="BMW Charging item" className="w-full" />
         </div>
         <div className="w-full sm:w-[95%] xl:w-[90%]">
-          <h4 className="text-[14px] leading-[17px] font-bold tracking-[0.25px] mb-[10px] sm:text-[15px] sm:leading-[18px] sm:tracking-[0.5px] xl:text-base xl:leading-5">
+          <h4 className="text-[14px] leading-[17px] font-bold tracking-[0.25px] mb-[10px] sm:text-15px sm:leading-[18px] sm:tracking-[0.5px] xl:text-base xl:leading-5">
             {title.titleText}{' '}
             <span>{title.thereIsIcon && setQuestionMark()}</span>
           </h4>

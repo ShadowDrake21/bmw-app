@@ -27,7 +27,7 @@ const BuildYourBMWSliderItem = (item: IBuildYourBMW) => {
             <h4 className="text-2xl tracking-[-0.1px] font-normal uppercase mb-[6px] sm:text-[30px] sm:leading-[38px] xl:text-[39px] xl:leading-[48px]">
               {item.adjective}
             </h4>
-            <p className="text-sm leading-[17px] tracking-[.25px] pr-[18px] relative inline-block sm:text-[15px] sm:leading-[18px] xl:text-base xl:leading-5">
+            <p className="text-sm leading-[17px] tracking-[.25px] pr-[18px] relative inline-block sm:text-15px sm:leading-[18px] xl:text-base xl:leading-5">
               <span>MSRP as Built</span>{' '}
               <span className="font-bold">{item.price}</span>
               <QuestionMarkCircleIcon className="text-[#cacaca] w-[15px] h-[15px] absolute right-0 top-0 cursor-pointer" />
@@ -73,7 +73,7 @@ const BuildYourBMWSliderItem = (item: IBuildYourBMW) => {
               href={item.link}
               className="capitalize rounded-sm px-[25px] py-[13px] inline-block bg-[#221f1f] text-white hover:bg-[#4c4c4c] hover:text-[#ebebeb]"
             >
-              <span className="text-[13px] leading-4 tracking-[0.5px] font-bold xl:text-[15px] xl:leading-5">
+              <span className="text-[13px] leading-4 tracking-[0.5px] font-bold xl:text-15px xl:leading-5">
                 Start building
               </span>
             </a>

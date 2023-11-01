@@ -36,7 +36,7 @@ const DesignFirstScreen = (item: IDesignFirstScreen) => {
             </h3>
           </div>
           <div className="sm:w-full">
-            <p className="relative z-[2] text-sm font-normal sm:text-[15px] sm:leading-6 xl:text-base xl:leading-[26px]">
+            <p className="relative z-[2] text-sm font-normal sm:text-15px sm:leading-6 xl:text-base xl:leading-[26px]">
               {textData.text}
             </p>
           </div>

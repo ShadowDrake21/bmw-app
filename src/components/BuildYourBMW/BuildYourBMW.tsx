@@ -18,7 +18,7 @@ const BuildYourBMW = (props: Props) => {
               BUILD YOUR BMW
             </h3>
             <div className="mb-5 w-[90%]">
-              <p className="tracking-[0.5px] text-sm font-normal sm:text-[15px] sm:leading-6">
+              <p className="tracking-[0.5px] text-sm font-normal sm:text-15px sm:leading-6">
                 Here's an easy way to get the best of BMW. We've already added
                 some popular features to these BMW i5 models – you get to choose
                 the rest.
@@ -28,7 +28,7 @@ const BuildYourBMW = (props: Props) => {
               href="#"
               className="inline-block relative text-[#4c4c4c] transition-colors duration-150 hover:text-[#1c69d3] pr-4 "
             >
-              <span className="capitalize text-sm leading-[17px] tracking-[.25px] font-bold sm:text-[15px] sm:leading-[18px] xl:text-base xl:leading-5">
+              <span className="capitalize text-sm leading-[17px] tracking-[.25px] font-bold sm:text-15px sm:leading-[18px] xl:text-base xl:leading-5">
                 Start Your Build
               </span>
               <ChevronRightIcon className="w-[15px] text-[#1c69d3] absolute right-0 top-1/2 -translate-y-1/2" />
@@ -39,7 +39,7 @@ const BuildYourBMW = (props: Props) => {
               href="#"
               className="inline-block pl-[35px] pr-[15px] py-[10px] drop-shadow-10px bg-white rounded-full text-[#221f1f] hover:text-[#4c4c4c] hover:bg-[#ebebeb] whitespace-nowrap"
             >
-              <span className="text-[15px] leading-5 tracking-[0.5px] font-bold">
+              <span className="text-15px leading-5 tracking-[0.5px] font-bold">
                 Compare All
               </span>
               <MagnifyingGlassCircleIcon className="text-[#1c69d3] w-6 h-6 absolute left-[7px] top-1/2 -translate-y-1/2" />

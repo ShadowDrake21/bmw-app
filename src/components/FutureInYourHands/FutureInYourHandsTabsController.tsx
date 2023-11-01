@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { IFutureInYourHandsArray } from '../../static/futureInYourHandsText'
 import FutureInYourHandsTabsControllerItem from './FutureInYourHandsTabsControllerItem'
 import Draggable from '../UI/Draggable/Draggable'

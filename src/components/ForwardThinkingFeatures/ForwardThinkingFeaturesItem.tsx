@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { IForwardThinkingFeatures } from '../../static/forwardThinkingFeaturesText'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
 import { useInView } from 'framer-motion'

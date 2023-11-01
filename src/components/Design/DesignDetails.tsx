@@ -33,7 +33,7 @@ const DesignDetails = (item: IDesignDetails) => {
       >
         {textContent.map((textItem) => (
           <div className="w-[47%] sm:w-[44%]" style={getMotionStyles(isInView)}>
-            <h6 className="text-sm leading-[17px] font-bold mb-[5px] tracking-[0.25px] sm:tracking-[0.5px] sm:text-[15px] sm:leading-[18px] sm:mb-[10px] xl:text-base xl:leading-5">
+            <h6 className="text-sm leading-[17px] font-bold mb-[5px] tracking-[0.25px] sm:tracking-[0.5px] sm:text-15px sm:leading-[18px] sm:mb-[10px] xl:text-base xl:leading-5">
               {textItem.title}
             </h6>
             <p className="text-xs leading-[18px] font-normal tracking-[0.5px] sm:text-[13px] sm:leading-5">

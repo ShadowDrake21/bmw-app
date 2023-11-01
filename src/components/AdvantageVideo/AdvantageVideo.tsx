@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { IAdvantageVideo } from '../../static/videoItems'
 import { useInView } from 'framer-motion'
 import { getMotionStyles } from '../../utils/utils'
@@ -36,7 +36,7 @@ const AdvantageVideo = (advantageVideo: IAdvantageVideo) => {
             </h4>
           </div>
           <div className="sm:max-w-[40%] xl:max-w-[50%]">
-            <p className="text-[#f6f6f6] tracking-[0.5px] text-sm font-normal sm:text-[15px] sm:leading-6 xl:text-base xl:leading-[26px]">
+            <p className="text-[#f6f6f6] tracking-[0.5px] text-sm font-normal sm:text-15px sm:leading-6 xl:text-base xl:leading-[26px]">
               {text}
             </p>
           </div>

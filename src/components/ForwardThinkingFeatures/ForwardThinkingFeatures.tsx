@@ -28,7 +28,7 @@ const ForwardThinkingFeatures = ({ array }: IForwardThinkingFeaturesArray) => {
             <h3 className="text-2xl leading-[30px] font-normal tracking-[-0.1px] mb-[10px] sm:text-[30px] sm:leading-[38px] xl:text-[39px] xl:leading-[48px]">
               FORWARD-THINKING FEATURES
             </h3>
-            <p className="tracking-[0.5px] text-sm font-normal sm:text-[15px] sm:leading-6 xl:text-base xl:leading-[26px]">
+            <p className="tracking-[0.5px] text-sm font-normal sm:text-15px sm:leading-6 xl:text-base xl:leading-[26px]">
               Standard safety technology in the 2024 BMW i5 allows you to
               navigate blind spots and other potential hazards with ease.
             </p>

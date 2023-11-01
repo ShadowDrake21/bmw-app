@@ -11,7 +11,7 @@ const NewSound = (newSoundInfo: INewSound) => {
               {title}
             </h3>
             <div className="w-[85%]">
-              <p className="text-[#f6f6f6] tracking-[0.5px] text-sm sm:text-[15px] sm:leading-6 xl:text-base xl:leading-[26px]">
+              <p className="text-[#f6f6f6] tracking-[0.5px] text-sm sm:text-15px sm:leading-6 xl:text-base xl:leading-[26px]">
                 {text}
               </p>
             </div>

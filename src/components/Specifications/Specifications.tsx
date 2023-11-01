@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   ISpecifications,
   specificationsInfo,
@@ -7,7 +6,7 @@ import SpecificationItem from './SpecificationItem'
 
 type Props = {}
 
-const Specifications = () => {
+const Specifications = (item: Props) => {
   return (
     <section className="py-10 xl:py-[50px]">
       <div className="mx-[8%] text-[#221f1f]">

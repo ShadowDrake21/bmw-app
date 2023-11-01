@@ -1,4 +1,3 @@
-import React from 'react'
 import { IAtGlance, IAtGlanceItem } from '../../static/atGlance'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
 
@@ -16,7 +15,7 @@ const AtGlance = (object: IAtGlance) => {
         </h3>
         <div>
           {textInfo.text.map((textItem) => (
-            <p className="text-sm font-normal tracking-[0.5px] sm:text-[15px] sm:leading-6 xl:text-base xl:leading-[26px]">
+            <p className="text-sm font-normal tracking-[0.5px] sm:text-15px sm:leading-6 xl:text-base xl:leading-[26px]">
               {textItem}{' '}
               {textInfo.thereIsIcon && (
                 <QuestionMarkCircleIcon className="inline-block w-4 h-4 text-[#727171] cursor-pointer" />

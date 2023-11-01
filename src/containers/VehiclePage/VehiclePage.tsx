@@ -1,4 +1,3 @@
-import React from 'react'
 import VehicleFirstScreen from '../../components/VehicleFirstScreen/VehicleFirstScreen'
 import { advantageVideoInfo, firstScreenInfo } from '../../static/videoItems'
 import AnchorLinks from '../../components/AnchorLinks/AnchorLinks'

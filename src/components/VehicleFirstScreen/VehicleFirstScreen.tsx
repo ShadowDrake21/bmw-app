@@ -67,7 +67,7 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
                   href={btnLink}
                   className="inline-block rounded-sm px-7 py-3 bg-[#1c69d3] transition-all duration-100 hover:text-[#ebebeb] hover:bg-[#1d55a2] xl:pt-[18px] xl:pb-[17px] xl:px-[35]"
                 >
-                  <span className="text-[13px] leading-4 tracking-[.5px] font-bold xl:text-[15px] xl:leading-5">
+                  <span className="text-[13px] leading-4 tracking-[.5px] font-bold xl:text-15px xl:leading-5">
                     {btnText}
                   </span>
                 </a>
@@ -78,7 +78,7 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
                 href={btnLink}
                 className="inline-block rounded-sm px-7 py-3 bg-[#1c69d3] transition-all duration-100 hover:text-[#ebebeb] hover:bg-[#1d55a2] xl:pt-[18px] xl:pb-[17px] xl:px-[35]"
               >
-                <span className="text-[13px] leading-4 tracking-[.5px] font-bold xl:text-[15px] xl:leading-5">
+                <span className="text-[13px] leading-4 tracking-[.5px] font-bold xl:text-15px xl:leading-5">
                   {btnText}
                 </span>
               </a>

@@ -25,7 +25,7 @@ const MakeItYours = (object: IMakeItYours) => {
   const { type, title, leaseOfferInfo, links } = textContent
 
   const linkTextCommonStyles =
-    'text-[13px] leading-4 font-bold tracking-[0.5px] capitalize xl:text-[15px] xl:leading-5'
+    'text-[13px] leading-4 font-bold tracking-[0.5px] capitalize xl:text-15px xl:leading-5'
 
   const linkButtonCommonStyles =
     'inline-block py-3 px-5 rounded-2 w-full text-center transition-colors duration-100 text-white hover:text-[#ebebeb]'

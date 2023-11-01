@@ -29,7 +29,7 @@ const VehicleAddNavBar = ({ isTopOfPage, title, link }: any) => {
             <span
               className={`${
                 isTopOfPage ? 'text-[#f6f6f6]' : 'text-[#221f1f]'
-              } text-sm tracking-[0.25px] sm:text-[15px] sm:leading-[18px]`}
+              } text-sm tracking-[0.25px] sm:text-15px sm:leading-[18px]`}
             >
               {title}
             </span>
