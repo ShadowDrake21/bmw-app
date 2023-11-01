@@ -15,14 +15,14 @@ const SpecificationItem = (specificationItem: ISpecifications) => {
         className="px-5 relative before:absolute before:content-[''] before:h-full before:w-[1px] before:bg-[#262626] before:top-0 before:left-0"
         style={getMotionStyles(isInView)}
       >
-        <p className="text-2xl leading-[30px] tracking-[-0.1px] font-normal sm:text-[30px] sm:leading-[38px] xl:text-[39px] xl:leading-[48px]">
+        <p className="text-2xl leading-[30px] tracking-minusSX font-normal sm:text-[30px] sm:leading-[38px] xl:text-[39px] xl:leading-[48px]">
           {value}
         </p>
         <div className="max-w-fit relative pr-4">
           <h4
             className={`${
               isThereIcon && 'py-3'
-            } w-full text-[11px] leading-[13px] tracking-[2.75px] pt-1 font-normal xl:text-xs xl:pt-2`}
+            } w-full text-11 leading-[13px] tracking-2.75 pt-1 font-normal xl:text-xs xl:pt-2`}
           >
             {title}
           </h4>

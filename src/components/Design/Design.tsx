@@ -9,7 +9,7 @@ type Props = {}
 
 const Design = (props: Props) => {
   return (
-    <section id="design" className="pt-10 sm:pt-[60px]">
+    <section id="design" className="pt-10 sm:pt-60">
       <div>
         <DesignFirstScreen {...designFirstScreenInfo} />
         <DesignDetails {...designDetailsInfo} />

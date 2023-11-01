@@ -33,12 +33,12 @@ const VehicleModels = (props: Props) => {
     return width < 768
   }
   return (
-    <section id="models" className="py-10 sm:py-[60px] xl:py-[80px]">
+    <section id="models" className="py-10 sm:py-[60px] xl:py-80">
       <div className="mx-[14%] text-center text-[#221f1f] mb-10">
-        <h3 className="uppercase text-[11px] leading-[13px] tracking-[2.75px] font-bold mb-5 xl:text-xs xl:mb-[25px]">
+        <h3 className="uppercase text-11 leading-[13px] tracking-2.75 font-bold mb-5 xl:text-xs xl:mb-[25px]">
           bmw i5 sedan
         </h3>
-        <p className="text-xl leading-[26px] tracking-[-.1px] font-normal sm:text-[23px] sm:leading-[31px] xl:text-[28px] xl:leading-[37px]">
+        <p className="text-xl leading-[26px] tracking-minusSX font-normal sm:text-23 sm:leading-[31px] xl:text-28 xl:leading-[37px]">
           This all-electric sporty business sedan leads with executive presence,
           best-in-class technology, and dynamic performance.
         </p>

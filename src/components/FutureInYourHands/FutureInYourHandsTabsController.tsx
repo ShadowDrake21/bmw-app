@@ -20,7 +20,7 @@ const FutureInYourHandsTabsController = ({
           {array.map((item, index) => (
             <li key={index} className="tabs__item">
               <button
-                className={`first:pl-5 py-5 pr-5 w-full whitespace-nowrap text-xs tracking-[.25px] font-bold text-[#727171] capitalize transition-colors duration-200 hover:text-[#221f1f] sm:text-[13px] sm:leading-[16px] xl:text-base xl:leading-5 sm:py-6 xl:py-7 tabs__button ${
+                className={`first:pl-5 py-5 pr-5 w-full whitespace-nowrap text-xs tracking-0.25 font-bold text-[#727171] capitalize transition-colors duration-200 hover:text-[#221f1f] sm:text-13 sm:leading-[16px] xl:text-base xl:leading-5 sm:py-6 xl:py-7 tabs__button ${
                   activeTabId === item.blockId ? 'active' : ''
                 }`}
                 onClick={() => setActiveTab(item.blockId)}

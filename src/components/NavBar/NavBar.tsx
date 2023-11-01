@@ -202,7 +202,7 @@ const NavBar = (props: Props) => {
               <button
                 className={`${
                   searchIsClicked ? 'block' : 'hidden'
-                } text-xs font-bold tracking-[.25px] text-black pl-3`}
+                } text-xs font-bold tracking-0.25 text-black pl-3`}
                 onClick={() => {
                   setSearchIsClicked(false)
                   setSearchTerm('')

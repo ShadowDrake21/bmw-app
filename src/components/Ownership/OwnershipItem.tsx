@@ -23,10 +23,10 @@ const OwnershipItem = (ownership: IOwnership) => {
             className="w-[75px] xl:w-[55px]"
           />
         </div>
-        <h5 className="text-base pb-2 leading-5 font-bold tracking-[-0.1px] sm:text-lg sm:leading-[22px] sm:pb-3 xl:text-xl xl:leading-6">
+        <h5 className="text-base pb-2 leading-5 font-bold tracking-minusSX sm:text-lg sm:leading-[22px] sm:pb-3 xl:text-xl xl:leading-6">
           {ownership.title}
         </h5>
-        <p className="text-[#221f1f] tracking-[.5px] text-sm font-normal pb-2 sm:text-15px sm:leading-6 xl:text-base xl:leading-[26px]">
+        <p className="text-[#221f1f] tracking-0.5 text-sm font-normal pb-2 sm:text-15 sm:leading-6 xl:text-base xl:leading-[26px]">
           {ownership.description}
         </p>
         <div>
@@ -34,7 +34,7 @@ const OwnershipItem = (ownership: IOwnership) => {
             href={ownership.link}
             className="pb-[2px] pr-4 max-w-fit relative after:content-[''] after:w-[87%] after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#221f1f] transition-all duration-200 text-[#221f1f] hover:text-[#4c4c4c] hover:after:bg-[#4c4c4c]"
           >
-            <span className=" text-sm font-bold tracking-[0.25px] ">
+            <span className=" text-sm font-bold tracking-0.25 ">
               {ownership.linkText}
             </span>
             {ownership.thereIsIcon && (

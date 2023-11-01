@@ -51,7 +51,7 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
             muted
             className="min-h-[500px] object-cover w-full"
           />
-          <div className="hidden absolute w-full h-full top-0 text-white mx-[4%] sm:block">
+          <div className="hidden absolute w-full h-full top-0 text-white mx-smallProcents sm:block">
             <div
               className="absolute top-1/2 -translate-y-1/2 sm:w-[30%] xl:top-[38%] xl:flex xl:flex-col"
               style={getMotionStyles(isInView)}
@@ -59,15 +59,15 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
               <h2 className="text-[32px] leading-[38px] font-normal relative z-20 top-0 sm:text-[42px] sm:leading-[50px] xl:text-[56px] xl:leading-[68px]">
                 {mainTitle}
               </h2>
-              <h1 className="text-xl tracking-[-.1px] font-normal mt-1 mb-5 sm:text-[23px] sm:leading-[31px] xl:text-[28px] xl:leading-[37px] xl:mb-3">
+              <h1 className="text-xl tracking-minusSX font-normal mt-1 mb-5 sm:text-23 sm:leading-[31px] xl:text-28 xl:leading-[37px] xl:mb-3">
                 {mainDescription}
               </h1>
               <div className="hidden mt-3 xl:block">
                 <a
                   href={btnLink}
-                  className="inline-block rounded-sm px-7 py-3 bg-[#1c69d3] transition-all duration-100 hover:text-[#ebebeb] hover:bg-[#1d55a2] xl:pt-[18px] xl:pb-[17px] xl:px-[35]"
+                  className="inline-block rounded-sm px-7 py-3 bg-[#1c69d3] transition-all duration-100 hover:text-[#ebebeb] hover:bg-[#1d55a2] xl:pt-[18px] xl:pb-[17px] xl:px-[35px]"
                 >
-                  <span className="text-[13px] leading-4 tracking-[.5px] font-bold xl:text-15px xl:leading-5">
+                  <span className="text-13 leading-4 tracking-0.5 font-bold xl:text-15 xl:leading-5">
                     {btnText}
                   </span>
                 </a>
@@ -76,9 +76,9 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
             <div className="absolute bottom-12 xl:hidden">
               <a
                 href={btnLink}
-                className="inline-block rounded-sm px-7 py-3 bg-[#1c69d3] transition-all duration-100 hover:text-[#ebebeb] hover:bg-[#1d55a2] xl:pt-[18px] xl:pb-[17px] xl:px-[35]"
+                className="inline-block rounded-sm px-7 py-3 bg-[#1c69d3] transition-all duration-100 hover:text-[#ebebeb] hover:bg-[#1d55a2] xl:pt-[18px] xl:pb-[17px] xl:px-[35px]"
               >
-                <span className="text-[13px] leading-4 tracking-[.5px] font-bold xl:text-15px xl:leading-5">
+                <span className="text-13 leading-4 tracking-0.5 font-bold xl:text-15 xl:leading-5">
                   {btnText}
                 </span>
               </a>
@@ -93,7 +93,7 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
               </span>
             </div>
           </div>
-          <div className="hidden text-[#f6f6f6] w-max absolute z-10 xl:block xl:bottom-[50px] xl:mx-[4%]">
+          <div className="hidden text-[#f6f6f6] w-max absolute z-10 xl:block xl:bottom-[50px] xl:mx-smallProcents">
             <p className="relative pr-[17px] w-max mb-[10px]">
               <span className="text-[10px] leading-[13px] font-bold tracking-[2px] uppercase">
                 Lease offer
@@ -105,26 +105,26 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
               />
             </p>
             <p>
-              <span className="text-2xl font-normal tracking-[-.1px] sm:text-[30px] sm:leading-9 xl:text-[39px] xl:leading-[48px]">
+              <span className="text-2xl font-normal tracking-minusSX sm:text-[30px] sm:leading-9 xl:text-[39px] xl:leading-[48px]">
                 {laserOfferPrice}
               </span>
-              <span className="text-xs font-normal tracking-[.25px] sm:text-[13px] sm:leading-4">
+              <span className="text-xs font-normal tracking-0.25 sm:text-13 sm:leading-4">
                 /month
               </span>
             </p>
-            <p className="mt-[5px] text-xs tracking-[.25px]">
+            <p className="mt-[5px] text-xs tracking-0.25">
               {laserOfferDescription}
             </p>
             <a
               href={importantInfoLink}
-              className="inline-block text-[11px] leading-[13px] capitalize tracking-[.25px] border-b border-white sm:pt-[14px]"
+              className="inline-block text-11 leading-[13px] capitalize tracking-0.25 border-b border-white sm:pt-[14px]"
             >
               important info
             </a>
           </div>
         </div>
         <div className="video__shadow relative bg-black text-white pb-[25px] xl:hidden">
-          <div className="mx-[4%] pt-1 pb-[15px]">
+          <div className="mx-smallProcents pt-1 pb-[15px]">
             <div
               className="block sm:hidden"
               style={{
@@ -136,7 +136,7 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
               <h2 className="text-[32px] leading-[38px] font-normal relative z-20">
                 {mainTitle}
               </h2>
-              <h1 className="text-xl tracking-[-.1px] font-normal mt-1 mb-5">
+              <h1 className="text-xl tracking-minusSX font-normal mt-1 mb-5">
                 {mainDescription}
               </h1>
               <div className="mb-7">
@@ -144,7 +144,7 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
                   href={btnLink}
                   className="inline-block rounded-sm px-7 py-3 bg-[#1c69d3] transition-all duration-100 hover:text-[#ebebeb] hover:bg-[#1d55a2]"
                 >
-                  <span className="text-[13px] leading-4 tracking-[.5px] font-bold">
+                  <span className="text-13 leading-4 tracking-0.5 font-bold">
                     {btnText}
                   </span>
                 </a>
@@ -173,19 +173,19 @@ const VehicleFirstScreen = (firstScreenInfo: IFirstScreenVideo) => {
                   />
                 </p>
                 <p>
-                  <span className="text-2xl font-normal tracking-[-.1px] sm:text-[30px] sm:leading-9">
+                  <span className="text-2xl font-normal tracking-minusSX sm:text-[30px] sm:leading-9">
                     {laserOfferPrice}
                   </span>
-                  <span className="text-xs font-normal tracking-[.25px] sm:text-[13px] sm:leading-4">
+                  <span className="text-xs font-normal tracking-0.25 sm:text-13 sm:leading-4">
                     /month
                   </span>
                 </p>
-                <p className="mt-[5px] text-xs tracking-[.25px]">
+                <p className="mt-[5px] text-xs tracking-0.25">
                   {laserOfferDescription}
                 </p>
                 <a
                   href={importantInfoLink}
-                  className="inline-block text-[11px] leading-[13px] capitalize tracking-[.25px] border-b border-white sm:pt-[14px]"
+                  className="inline-block text-11 leading-[13px] capitalize tracking-0.25 border-b border-white sm:pt-[14px]"
                 >
                   important info
                 </a>

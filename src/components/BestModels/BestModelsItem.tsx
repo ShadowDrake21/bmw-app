@@ -8,10 +8,10 @@ const BestModelsItem = (model: IBestModels) => {
   return (
     <div className="relative w-full">
       <div className="absolute bottom-[40px] left-0 right-0 text-center z-30 sm:bottom-4">
-        <h5 className="text-[11px] font-bold leading-3 tracking-[2.75px] text-white mb-[2px] xl:text-xs">
+        <h5 className="text-11 font-bold leading-3 tracking-2.75 text-white mb-[2px] xl:text-xs">
           {name}
         </h5>
-        <h3 className="text-white text-xl tracking-[-0.1px] font-normal mb-1 sm:text-[23px] sm:leading-[31px] xl:text-[28px] xl:leading-[37px] sm:mb-2">
+        <h3 className="text-white text-xl tracking-minusSX font-normal mb-1 sm:text-23 sm:leading-[31px] xl:text-28 xl:leading-[37px] sm:mb-2">
           {description}
         </h3>
         <a
