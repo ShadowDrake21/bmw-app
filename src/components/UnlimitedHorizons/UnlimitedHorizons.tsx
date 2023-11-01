@@ -1,7 +1,9 @@
 import imageSmallDevices from '../../assets/model-i5/unlimitedHorizons/unlimitedHorizonsPhotoSmallGadgets.jpg'
 import imageDesktop from '../../assets/model-i5/unlimitedHorizons/unlimitedHorizonsPhotoDesktop.jpg'
-import { useWindowDimensions } from '../../utils/utils'
+import { getMotionStyles, useWindowDimensions } from '../../utils/utils'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
+import { useRef } from 'react'
+import { useInView } from 'framer-motion'
 
 type Props = {}
 
@@ -28,10 +30,14 @@ const UnlimitedHorizons = (props: Props) => {
     return width >= 768
   }
 
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
   return (
     <section
       id="range-and-charging"
       className="pt-[100px] pb-[50px] sm:pt-[120px] xl:pt-[140px] sm:pb-[60px] xl:pb-[70px]"
+      ref={ref}
     >
       <div>
         <div className="mx-[8%] text-center text-[#221f1f] pb-10 sm:mx-[12%] xl:mx-[20%] xl:pb-[50px]">
@@ -57,7 +63,7 @@ const UnlimitedHorizons = (props: Props) => {
             </span>
           </a>
         </div>
-        <div className="pb-[10px]">
+        <div className="pb-[10px]" style={getMotionStyles(isInView)}>
           <img
             src={!widthCheckTablet ? imageSmallDevices : imageDesktop}
             alt="unlimited horizons"

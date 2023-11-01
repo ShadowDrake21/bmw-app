@@ -3,15 +3,24 @@ import ForwardThinkingFeaturesItem from './ForwardThinkingFeaturesItem'
 import mainImageMobile from '../../assets/model-i5/forwardThinkingFeatures/FTFeaturesMainMobile.jpg'
 import mainImageTablet from '../../assets/model-i5/forwardThinkingFeatures/FTFeaturesMainTablet.jpg'
 import mainImageDesktop from '../../assets/model-i5/forwardThinkingFeatures/FTFeaturesMainDesktop.jpg'
-import { useWindowDimensions } from '../../utils/utils'
+import { getMotionStyles, useWindowDimensions } from '../../utils/utils'
+import { useRef } from 'react'
+import { useInView } from 'framer-motion'
 
 const ForwardThinkingFeatures = ({ array }: IForwardThinkingFeaturesArray) => {
   const { width } = useWindowDimensions()
 
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
   return (
-    <section id="safety-and-technology" className="pt-[60px] xl:pt-[80px]">
+    <section
+      id="safety-and-technology"
+      className="pt-[60px] xl:pt-[80px]"
+      ref={ref}
+    >
       <div>
-        <div>
+        <div style={getMotionStyles(isInView)}>
           <div className="mx-[8%] text-center relative z-10 text-[#221f1f] sm:mx-[14%] xl:mx-[18%]">
             <h2 className="text-[11px] leading-[13px] font-bold tracking-[2.75px] mb-[10px] xl:text-xs">
               SAFETY & TECHNOLOGY

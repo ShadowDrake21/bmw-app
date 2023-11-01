@@ -2,6 +2,7 @@ import BuildBMWDreamsItem from './BuildBMWDreamsItem'
 import { buildBMWDreamsInfo } from '../../static/buildBMWDreams'
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
+import { getMotionStyles } from '../../utils/utils'
 
 type Props = {}
 
@@ -11,11 +12,7 @@ const BuildBMWDreams = (props: Props) => {
   return (
     <section ref={ref}>
       <div
-        style={{
-          transform: isInView ? 'none' : 'translateY(50px)',
-          opacity: isInView ? 1 : 0,
-          transition: 'all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 1s',
-        }}
+        style={getMotionStyles(isInView)}
         className="bg-[#F6F6F6] pt-10 pb-12 sm:py-[60px] xl:py-[80px]"
       >
         <h3 className="text-xl tracking-[-0.1px] text-[#221f1f] text-center mb-[25px] sm:text-[23px] sm:leading-[31px] xl:text-[28px] xl:leading-[37px]">

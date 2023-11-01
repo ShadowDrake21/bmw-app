@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { IForwardThinkingFeatures } from '../../static/forwardThinkingFeaturesText'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
+import { useInView } from 'framer-motion'
+import { getMotionStyles } from '../../utils/utils'
 
 const ForwardThinkingFeaturesItem = (item: IForwardThinkingFeatures) => {
   const { image, title, textInfo } = item
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
   return (
-    <div>
-      <div className="flex gap-[5%] sm:flex-col sm:gap-5 xl:gap-[25px]">
+    <div ref={ref}>
+      <div
+        className="flex gap-[5%] sm:flex-col sm:gap-5 xl:gap-[25px]"
+        style={getMotionStyles(isInView)}
+      >
         <div className="w-1/2 sm:w-full">
           <img src={image} alt="safety and technology" />
         </div>
