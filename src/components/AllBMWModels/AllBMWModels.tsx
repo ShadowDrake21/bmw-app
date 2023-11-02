@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { ChevronRightIcon } from '@heroicons/react/24/solid'
 import { BMWSeriesInfo } from '../../static/BMWSeriesText'
 import Draggable from '../UI/Draggable/Draggable'

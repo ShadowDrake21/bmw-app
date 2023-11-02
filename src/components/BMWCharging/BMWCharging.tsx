@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { IBMWChargingArray } from '../../static/BMWCharging'
 import BMWChargingItem from './BMWChargingItem'
 import titlePhoto from '../../assets/model-i5/BMWCharging/BMWChargingTitle.png'

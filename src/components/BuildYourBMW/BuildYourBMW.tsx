@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import BuildYourBMWSlider from './BuildYourBMWSlider'
 import { buildYourBMWSliderInfo } from '../../static/buildYourBMWSlider'
 import { ChevronRightIcon } from '@heroicons/react/24/solid'

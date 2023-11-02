@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import imageSmallDevices from '../../assets/model-i5/unlimitedHorizons/unlimitedHorizonsPhotoSmallGadgets.jpg'
 import imageDesktop from '../../assets/model-i5/unlimitedHorizons/unlimitedHorizonsPhotoDesktop.jpg'
 import { getMotionStyles, useWindowDimensions } from '../../utils/utils'

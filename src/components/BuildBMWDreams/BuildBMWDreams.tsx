@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import BuildBMWDreamsItem from './BuildBMWDreamsItem'
 import { buildBMWDreamsInfo } from '../../static/buildBMWDreams'
 import { useRef } from 'react'
